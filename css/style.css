@@ -1,0 +1,127 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*CSS*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: #CEC8FF;
+	overflow: hidden;
+}
+.warpus_container{
+	width: 40vw;
+	height: 80vh;
+	margin: 8vw auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.warpus{
+	width: 100%;
+ 	height: 60vh;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	position: relative;
+}
+.warpus_scream{
+	content: '';
+	width: 45vw;
+	height: 45vh;
+	position: absolute;
+	top: 10%;
+	left: -100%;
+	background: url(../img/scream_warpus.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 0.3s;
+}
+.left{
+	left: -10%;
+}
+.warpus input{
+	font-size: 1.6vw;
+	margin-top: 1vw;
+	border: 0;
+	font-weight: bold;
+	text-align: center;
+	background: transparent;
+}
+.buttons_container{
+	width: 80%;
+	height: 40vh;
+	display: flex;
+	justify-content: space-around;
+}
+.button{
+	width: 12vw;
+	height: 7vh;
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(110.87deg, #FFFFFF 10.71%, #CFCFCF 92.38%);
+	box-shadow: 0 4px 13px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	border: 0;
+	text-align: center;
+	cursor: pointer;
+}
+.button h2{
+	font-size: 2vw;
+}
+#yes h2{
+	color: #3F3F3F;
+}
+#nope{
+	cursor: default;
+}
+#nope h2{
+	color: #FF0C0C;
+}
+#nope:hover{
+	position: relative;
+	top: -90%;
+	left: 25%;	
+}
+input:focus, .button:focus{
+	outline: 0 !important;
+}
+/*Media queries*/
+@media (orientation: portrait){
+	.warpus_container{
+		width: 90vw;
+		padding-top: 25vh;
+	}
+	img{
+		width: 50%;
+	}
+	.warpus_scream{
+		top: 2%;
+		left: -44%;
+	}
+	.warpus input{
+		font-size: 4vh;
+	}
+	.buttons_container{
+		width: 100%;
+		justify-content: space-around;
+	}
+	.button{
+		width: 30vw;
+		height: 7vh;
+	}
+	#nope:hover{
+		top: 0;
+		left: 0;
+	}
+	.button h2{
+		font-size: 3vh;
+	}
+}
+.runaway{
+	position: relative;
+	top: -94%;
+	left: 12%;
+}
