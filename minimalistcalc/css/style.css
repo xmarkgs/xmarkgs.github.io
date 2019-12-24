@@ -124,7 +124,7 @@ input[type="button"]:hover{
 /*Media Queries*/
 @media (orientation: portrait){
 	.calculator_container{
-		
+		padding-top: 1vh;
 	}
 	.calculator{
 		width: 95vw;
