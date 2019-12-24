@@ -13,6 +13,7 @@ function changer() {
 	button.style.display = "none";
 	button_nope.style.display = "none";
 	tryagain.style.display = "block";
+	document.getElementById("buttonscontainer").style.justifyContent = "center"
 };
 function runaway(){
 	document.getElementById('nope_cover').classList.toggle('runaway');
@@ -36,4 +37,6 @@ function closevideo(){
 	button.style.display = "block";
 	button_nope.style.display = "block";
 	textvalue.value = "U gay?"
+	document.getElementById('nope_cover').classList.toggle('runaway');
+	document.getElementById("buttonscontainer").style.justifyContent = "space-around";
 }

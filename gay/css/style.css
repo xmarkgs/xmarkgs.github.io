@@ -7,9 +7,12 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
-body{
+.whole_container{
+	width: 100%;
+	height: 100vh;
 	background: #CEC8FF;
 	overflow: hidden;
+	position: relative;
 }
 .warpus_container{
 	width: 40vw;
@@ -109,11 +112,6 @@ video{
 #nope h2{
 	color: #FF0C0C;
 }
-#nope:hover{
-	position: relative;
-	top: -90%;
-	left: 25%;	
-}
 #buttonvideocontainer{
 	position: absolute;
 	top: 0;
@@ -141,6 +139,7 @@ video{
 	background: url(../img/iconxblack.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	opacity: 30%;
 }
 #close{
 	position: relative;
@@ -165,6 +164,9 @@ input:focus, .button:focus{
 }
 /*Media queries*/
 @media (orientation: portrait){
+	body{
+		overflow: hidden;
+	}
 	.warpus_container{
 		width: 90vw;
 		padding-top: 25vh;
@@ -191,6 +193,7 @@ input:focus, .button:focus{
 		top: -78vh;
 		width: 4vh;
 		height: 4vh;
+		opacity: 1;
 	}
 	#close{
 		width: 15vh;
@@ -237,6 +240,9 @@ input:focus, .button:focus{
 
 }
 @media (min-width: 724px, max-width:1024px ){
+	body{
+		overflow: hidden;
+	}
 	#buttonvideocontainer{
 		top: 20vh;
 
