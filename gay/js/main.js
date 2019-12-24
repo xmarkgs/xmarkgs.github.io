@@ -37,6 +37,8 @@ function closevideo(){
 	button.style.display = "block";
 	button_nope.style.display = "block";
 	textvalue.value = "U gay?"
-	document.getElementById('nope_cover').classList.toggle('runaway');
+	if(document.getElementById('nope_cover').classList == "runaway"){
+		document.getElementById('nope_cover').classList.toggle('runaway');
+	};
 	document.getElementById("buttonscontainer").style.justifyContent = "space-around";
 }
