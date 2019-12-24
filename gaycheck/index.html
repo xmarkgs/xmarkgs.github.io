@@ -14,10 +14,20 @@
 	<div class="warpus_scream" id="leftblock">
 				<!-- Screaming warpus block -->
 	</div>
+	<div id="buttonvideocontainer">
+		<button id="realclose" type="button" onclick="closevideo()">
+		</button>
+		<a href="https://www.jw.org/uk/" id="close" class="button" type="button">Close</a>
+	</div>
+	
+	<video loop id="gayvideo" poster="img/preview.png">
+		<source src="video/yrug.mp4" type="video/mp4">
+		
+	</video>
 	<div class="warpus_container">
 		<div class="warpus">
 			
-			<img src="img/warpus.png" alt="" width="31%">
+			<img src="img/warpus.png" alt="" width="31%" id="warpus">
 			<input type="text" value="U gay?" name="gay" readonly id="myInput">
 		</div>
 		<div class="buttons_container">
@@ -25,6 +35,9 @@
 				<h2>Yes</h2>
 			</button>
 			<div id="nope_cover">
+				<button id="tryagain" class="button" type="button" onclick="gayquest()">
+					<h2>Try Again</h2>
+				</button>
 				<button id="nope" class="button" type="button" onclick="runaway()">
 					<h2>Nope</h2>
 				</button>
