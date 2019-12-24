@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimalist Calculator</title>
+	<!-- My own CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Meta queries tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- My favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<!-- Background light block -->
+	<div class="light">
+		
+	</div>
+	<!-- Calc -->
+	<div class="calculator_container">
+		<div class="calculator">
+			<div class="screen_container">
+					<div class="mac_icon"></div>
+					<div class="mac_icon"></div>
+					<div class="mac_icon"></div>
+					<input class="textview" name="textview" id="textview">
+			</div>
+			<div class="buttons_container">
+				<input type="button" value="C" onclick="clean()">
+				<input type="button" value="<" onclick="back()">
+				<input type="button" value="/" onclick="insert('/')"></input>
+				<input type="button" value="*" onclick="insert('*')">
+				<input type="button" value="7" onclick="insert(7)">
+				<input type="button" value="8" onclick="insert(8)">
+				<input type="button" value="9" onclick="insert(9)">
+				<input type="button" value="-" onclick="insert('-')">
+				<input type="button" value="4" onclick="insert(4)">
+				<input type="button" value="5" onclick="insert(5)">
+				<input type="button" value="6" onclick="insert(6)">
+				<input type="button" value="+" onclick="insert('+')">
+				<input type="button" value="1" onclick="insert(1)">
+				<input type="button" value="2" onclick="insert(2)">
+				<input type="button" value="3" onclick="insert(3)">
+				<input type="button" value="=" onclick="equal()">
+				<input type="button" value="0" onclick="insert(0)">
+				<input type="button" value="." onclick="insert('.')">
+				<input type="button" value="(" onclick="insert('(')">
+				<input type="button" value=")" onclick="insert(')')">
+			</div>
+		</div>
+	</div>
+	<!-- Background darker block -->
+	<div class="dark">
+		
+	</div>
+
+	<!-- My custom JS file -->
+	<script src="js/main.js"></script>
+</body>
+</html>
