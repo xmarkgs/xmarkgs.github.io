@@ -118,14 +118,14 @@ input[type="button"]{
 	border: 0;
 	background: transparent;
 	cursor: pointer;
-	font-size: 1.8vw;
+	font-size: 2vw;
 	transition: 0.3s;
 }
 input:focus{
 	outline: 0 !important;
 }
 input[type="button"]:hover{
-	font-size: 2vw;
+	font-size: 2.2vw;
 }
 /*Media Queries*/
 @media (orientation: portrait){
