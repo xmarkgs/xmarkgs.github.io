@@ -6,7 +6,7 @@
 	<!-- My own CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Meta queries tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- My favicon -->
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
@@ -25,26 +25,26 @@
 					<input class="textview" name="textview" id="textview" readonly="true">
 			</div>
 			<div class="buttons_container">
-				<input type="button" value="C" onclick="clean()">
-				<input type="button" value="<" onclick="back()">
-				<input type="button" value="/" onclick="insert('/')"></input>
-				<input type="button" value="*" onclick="insert('*')">
-				<input type="button" value="7" onclick="insert(7)">
-				<input type="button" value="8" onclick="insert(8)">
-				<input type="button" value="9" onclick="insert(9)">
-				<input type="button" value="-" onclick="insert('-')">
-				<input type="button" value="4" onclick="insert(4)">
-				<input type="button" value="5" onclick="insert(5)">
-				<input type="button" value="6" onclick="insert(6)">
-				<input type="button" value="+" onclick="insert('+')">
-				<input type="button" value="1" onclick="insert(1)">
-				<input type="button" value="2" onclick="insert(2)">
-				<input type="button" value="3" onclick="insert(3)">
-				<input type="button" value="=" onclick="equal()">
-				<input type="button" value="0" onclick="insert(0)">
-				<input type="button" value="." onclick="insert('.')">
-				<input type="button" value="(" onclick="insert('(')">
-				<input type="button" value=")" onclick="insert(')')">
+				<div><input type="button" value="C" onclick="clean()"></div>
+				<div><input type="button" value="<" onclick="back()"></div>
+				<div><input type="button" value="/" onclick="divide()" id="divide"></div>
+				<div><input type="button" value="*" onclick="multiply()" id="multiply"></div>
+				<div><input type="button" value="7" onclick="insert(7)"></div>
+				<div><input type="button" value="8" onclick="insert(8)"></div>
+				<div><input type="button" value="9" onclick="insert(9)"></div>
+				<div><input type="button" value="-" onclick="minus()" id="minus"></div>
+				<div><input type="button" value="4" onclick="insert(4)"></div>
+				<div><input type="button" value="5" onclick="insert(5)"></div>
+				<div><input type="button" value="6" onclick="insert(6)"></div>
+				<div><input type="button" value="+" onclick="plus()" id="plus"></div>
+				<div><input type="button" value="1" onclick="insert(1)"></div>
+				<div><input type="button" value="2" onclick="insert(2)"></div>
+				<div><input type="button" value="3" onclick="insert(3)"></div>
+				<div><input type="button" value="=" onclick="equal()"></div>
+				<div><input type="button" value="0" onclick="insert(0)"></div>
+				<div><input type="button" value="." onclick="point()" id="point"></div>
+				<div><input type="button" value="(" onclick="insert('(')"></div>
+				<div><input type="button" value=")" onclick="insert(')')"></div>
 			</div>
 		</div>
 	</div>

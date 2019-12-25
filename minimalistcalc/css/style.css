@@ -107,6 +107,9 @@ input[name="textview"]{
 	padding-top:1vw;
 	padding-bottom: 1vw;
 }
+.buttons_container div{
+	text-align: center;
+}
 input[type="button"]{
 	color: white;
 	border: 0;
