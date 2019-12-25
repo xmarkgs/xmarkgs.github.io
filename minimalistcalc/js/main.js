@@ -9,7 +9,6 @@ function clean(){
 	document.getElementById("minus").setAttribute("onclick", "minus()");
 	document.getElementById("point").setAttribute("onclick", "point()");
 	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
-	document.getElementById("rightbracket").setAttribute("onclick", "rightbracket()");
 };
 function back(){
 	var value = textview.value;
@@ -20,7 +19,6 @@ function back(){
 	document.getElementById("minus").setAttribute("onclick", "minus()");
 	document.getElementById("point").setAttribute("onclick", "point()");
 	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
-	document.getElementById("rightbracket").setAttribute("onclick", "rightbracket()");
 };
 function equal(){
 	var valuenumber = textview.value;
@@ -107,8 +105,9 @@ function leftbracket(){
 	document.getElementById("plus").removeAttribute("onclick", "plus()");
 	document.getElementById("minus").removeAttribute("onclick", "minus()");
 	document.getElementById("divide").removeAttribute("onclick", "divide()");
+	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
 }
-
+document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
 function rightbracket(){
 	textview.value = textview.value+ ")";
 };
