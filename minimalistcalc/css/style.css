@@ -139,6 +139,7 @@ input[type="button"]:hover{
 	input[type="button"]{
 		font-size: 5.5vh;
 		transition: 0.3s;
+		height: 10vh;
 	}
 	input[type="button"]:hover{
 		font-size: 5.5vh;
