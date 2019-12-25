@@ -41,7 +41,7 @@ function insert(num){
 	document.getElementById("plus").setAttribute("onclick", "plus()");
 	document.getElementById("minus").setAttribute("onclick", "minus()");
 	document.getElementById("point").setAttribute("onclick", "point()");
-	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
+	document.getElementById("leftbracket").removeAttribute("onclick", "leftbracket()");
 	document.getElementById("rightbracket").setAttribute("onclick", "rightbracket()");
 
 };
@@ -54,6 +54,7 @@ function divide(){
 	document.getElementById("multiply").removeAttribute("onclick", "multiply()");
 	document.getElementById("plus").removeAttribute("onclick", "plus()");
 	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
+	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
 };
 
 function minus(){
@@ -64,6 +65,7 @@ function minus(){
 	document.getElementById("plus").removeAttribute("onclick", "plus()");
 	document.getElementById("divide").removeAttribute("onclick", "divide()");
 	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
+	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
 };
 
 function plus(){
@@ -74,6 +76,7 @@ function plus(){
 	document.getElementById("minus").removeAttribute("onclick", "minus()");
 	document.getElementById("divide").removeAttribute("onclick", "divide()");
 	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
+	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
 };
 
 function multiply(){
@@ -84,6 +87,7 @@ function multiply(){
 	document.getElementById("minus").removeAttribute("onclick", "minus()");
 	document.getElementById("divide").removeAttribute("onclick", "divide()");
 	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
+	document.getElementById("leftbracket").setAttribute("onclick", "leftbracket()");
 };
 
 function point(){
