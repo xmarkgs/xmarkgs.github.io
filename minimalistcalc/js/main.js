@@ -107,7 +107,6 @@ function leftbracket(){
 	document.getElementById("point").removeAttribute("onclick", "point()");
 	document.getElementById("multiply").removeAttribute("onclick", "multiply()");
 	document.getElementById("plus").removeAttribute("onclick", "plus()");
-	document.getElementById("minus").removeAttribute("onclick", "minus()");
 	document.getElementById("divide").removeAttribute("onclick", "divide()");
 	document.getElementById("rightbracket").removeAttribute("onclick", "rightbracket()");
 }
