@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Meta for Media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<main>
+	<div class="container">
+		<header>
+			<h1>Type the profle nickname to find more about it!</h1>
+			<h2>This feature gives you the possibility to check the main stats of a GitHub profile such as it's Full Name, nickname, the number of repositories and to have a link to it~!</h2>
+			<div class="input_container">
+				<input type="text" name="profile" placeholder="GitHub nickname..." id="search">
+				<button type="button" class="searchButton">Search!</button>
+			</div>
+			
+		</header>
+		<section>
+			<div class="user_info_container">
+				<p class="user_info_text" id="username"></p>
+			</div>
+			<div class="user_info_container">
+				<p class="user_info_text" id="usernick"></p>
+			</div>
+			<div class="user_info_container">
+				<p class="user_info_text" id="userrepositories"></p>
+			</div>
+			<div class="user_info_container">
+				<p class="user_info_text" id="userlink"></p>
+			</div>
+		</section>
+	</div>
+</main>
+	<!-- My custom JS file -->
+	<script src="js/app.js"></script>
+</body>
+</html>
