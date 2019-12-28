@@ -1,4 +1,4 @@
 // JS App
-const code = window.location.search;
-code.slice(1, -0);
+const code = window.location.search + "b";
+code.slice(1, -1);
 console.log(code);
