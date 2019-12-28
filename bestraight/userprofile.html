@@ -23,14 +23,13 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols"></script>
 	<script src="https://cdn.jsdelivr.net/npm/superagent"></script>
 	<script type="text/javascript">
-
   	(function() {
     		`window.request = superagent;` 
     		const request = require('superagent'); 	
-			request
+			request;
 			  .get('https://github.com/login/oauth/authorize')
 			  .then((res) => {
-			  		console.log(res);
+			  		console.log(1);
 			  });
   });
 </script>
