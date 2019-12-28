@@ -2,7 +2,7 @@
 
 // Code Get Code
 const code= window.location.search;
-code.slice(0, 7);
+code.slice(6, 28);
 console.log(code);
 
 (function() {
