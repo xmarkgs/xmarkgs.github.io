@@ -24,15 +24,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/superagent"></script>
 	<script type="text/javascript">
   	(function() {
-    `window.request = superagent;`
-    superagent
-      .post('/api/pet')
-      .send({ name: 'Manny', species: 'cat' }) // sends a JSON post body
-      .set('X-API-Key', 'foobar')
-      .set('accept', 'json')
-      .end(function (err, res) {
-        // Calling the end function will send the request
-      });
+    		`window.request = superagent;`  	
+			request
+			  .get('https://github.com/login/oauth/authorize')
+			  .then((res) => {
+			  		console.log(res);
+			  });
   })();
 </script>
 </body>
