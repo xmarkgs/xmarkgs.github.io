@@ -27,7 +27,7 @@
     		window.request = superagent; 
     		const request = require('superagent'); 	
 			request;
-			  get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
+			  .get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
 			  .then((res) => {
 			  		console.log(res);
 			  });
