@@ -52,19 +52,18 @@ button[type="button"]{
 button[type="button"]:focus{
 	outline: 0;
 }
-a{
+h3{
 	color: #FFFFFF;
 	font-weight: medium;
 	font-size: 2vh;
 	position: relative;
 	left: -1.25vw;
-	text-decoration: none;
 }
-a:before{
+h3:before{
 	content: '';
 	position: absolute;
 	top: -0.3vh;
-	left: 9.5vw;
+	left: 12vw;
 	width: 3vh;
 	height: 3vh;
 	background: url(../img/github_icon.png) no-repeat;
