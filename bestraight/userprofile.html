@@ -24,10 +24,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/superagent"></script>
 	<script type="text/javascript">
   	(function() {
-    		`window.request = superagent;` 
+    		window.request = superagent; 
     		const request = require('superagent'); 	
 			request;
-			  .get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
+			  get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
 			  .then((res) => {
 			  		console.log(res);
 			  });
