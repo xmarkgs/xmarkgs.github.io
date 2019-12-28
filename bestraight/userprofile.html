@@ -20,20 +20,6 @@
 	<!-- App JS file -->
 	<script src="js/app.js"></script>
 	<!-- SuperAgent JS -->
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols"></script>
-	<script src="https://cdn.jsdelivr.net/npm/superagent"></script>
-	<script type="text/javascript">
-  	(function() {
-    		window.request = superagent; 
-    		const request = require('superagent'); 	
-    		var code = window.location.search.slice(1, -0);
-    		console.log(code);
-			request;
-			  .get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
-			  .then((res) => {
-			  		console.log(res);
-			  });
-  });
 </script>
 </body>
 </html>
