@@ -27,9 +27,9 @@
     		`window.request = superagent;` 
     		const request = require('superagent'); 	
 			request;
-			  .get('https://github.com/login/oauth/authorize')
+			  .get('https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533')
 			  .then((res) => {
-			  		console.log(1);
+			  		console.log(res);
 			  });
   });
 </script>
