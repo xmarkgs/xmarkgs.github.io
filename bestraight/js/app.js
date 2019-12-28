@@ -1,4 +1,8 @@
 // JS App
+const request = require('superagent');
 
-var code = window.location.search;
-console.log(code);
+request
+  .get('https://github.com/login/oauth/authorize')
+  .then(res => {
+  		console.log(res);
+  });
