@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+*::selection{
+	color: #FFFFFF;
+	background: #212121;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template:1fr / 1fr 1fr;
+}
+.leftcol{
+	display: flex;
+	background: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5vw;
+}
+h1{
+	font-weight: medium;
+	font-size: 4.67vh;
+	line-height: 7.5vh;
+	color: #212121;
+}
+h2{
+	font-weight: medium;
+	font-size: 2.3vh;
+	line-height: 4.4vh;
+	color: #828282;
+}
+.button_container{
+	width: 76%;
+	margin-top: 4.7vh;
+	display: flex;
+	justify-content: flex-end;
+}
+button[type="button"]{
+	background: #212121;
+	border-radius: 0.8vh;
+	width: 13vw;
+	height: 6vh;
+	border: 0;
+	cursor: pointer;
+}
+button[type="button"]:focus{
+	outline: 0;
+}
+h3{
+	color: #FFFFFF;
+	font-weight: medium;
+	font-size: 2vh;
+	position: relative;
+	left: -1.25vw;
+}
+h3:before{
+	content: '';
+	position: absolute;
+	top: -0.3vh;
+	left: 11.8vw;
+	width: 3vh;
+	height: 3vh;
+	background: url(../img/github_icon.png) no-repeat;
+	background-size: contain;
+}
+.rightcol{
+	background: #C4C4C4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h4{
+	color:#212121;
+	font-size: 7.2vh;
+	font-weight: medium;
+}
