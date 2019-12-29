@@ -1,17 +1,17 @@
 // JS App
 
 // Code Get Code
-var code = window.location.search + "b";
-var usercode = code.slice(6, 28);
-console.log(usercode);
+var window_code = window.location.search;
+var code = window_code.slice(6, 30);
+console.log(code);
 
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://github.com/login/oauth/access_token", true);
+xhr.open('POST', 'https://github.com/login/oauth/access_token', true);
 xhr.setRequestHeader('Accept', 'application/json');
 xhr.send(JSON.stringify({
     client_id: '83af441880ea9eca9533',
     client_secret: '90b880f712bae73b7a4433ce27501bfd7d86de35'
-    code: usercode
+    code: code;
 }));
 xhr.then(function(res){
 	const data = res;
