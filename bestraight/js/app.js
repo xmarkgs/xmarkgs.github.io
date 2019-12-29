@@ -1,21 +1,19 @@
 // JS App
 
 // Code Get Code
-var window_code = window.location.search;
-var code = window_code.slice(6, 35);
+// var window_code = window.location.search;
+// var code = window_code.slice(6, 35);
+var code = window.location.search;
 console.log(code);
 const xhr = new XMLHttpRequest();
 xhr.open("POST", "https://github.com/login/oauth/access_token");
-xhr.setRequestHeader('Content-type', 'application/x-www-urlencoded');
+xhr.setRequestHeader('Accept', 'application/json');
 xhr.send({
 	client_id: "83af441880ea9eca9533", 
 	client_secret: "90b880f712bae73b7a4433ce27501bfd7d86de35", 
-	code: code
+	code: `${code}`
 });
 xhr.onload = function (){
-	console.log(this.responseText);
+	const access_token = this.responseText;
+	console.log(access_token);
 };
-
-// xhr.onreadystatechange = (e) => {
-//   console.log(getaccesstoken.responseText);
-// };
