@@ -6,7 +6,7 @@
 var code = window.location.search;
 console.log(code);
 const xhr = new XMLHttpRequest();
-xhr.open("POST", "https://github.com/login/oauth/access_token");
+xhr.open("POST", `https://github.com/login/oauth/access_token${code}`);
 xhr.setRequestHeader('Accept', 'application/json');
 xhr.send({
 	client_id: "83af441880ea9eca9533", 
