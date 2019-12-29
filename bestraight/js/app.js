@@ -6,7 +6,6 @@ var code = window_code.slice(6, 35);
 console.log(code);
 const xhr = new XMLHttpRequest();
 xhr.open("POST", "https://github.com/login/oauth/access_token");
-xhr.setRequestHeader("Access-Control-Allow-Origin");
 xhr.setRequestHeader("Accept", "application/json");
 xhr.send({
 	client_id: "83af441880ea9eca9533", 
