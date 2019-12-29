@@ -1,7 +1,6 @@
 // JS App
 
 // Code Get Code
-// var window_code = window.location.search;
 var code = window.location.search;
 console.log(code);
 const xhr = new XMLHttpRequest();
