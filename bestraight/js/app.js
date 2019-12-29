@@ -1,7 +1,7 @@
 // JS App
 
 // Code Get Code
-const code = window.location.search;
+var code = window.location.search;
 var usercode = code.slice(6, 28);
 console.log(usercode);
 
@@ -11,7 +11,7 @@ xhr.setRequestHeader('Accept', 'application/json');
 xhr.send(JSON.stringify({
     client_id: '83af441880ea9eca9533',
     client_secret: '90b880f712bae73b7a4433ce27501bfd7d86de35'
-    code: usercode
+    code: `${usercode}`
 }));
 xhr.then(function(res){
 	const data = res;
