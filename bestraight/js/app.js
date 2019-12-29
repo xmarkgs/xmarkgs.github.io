@@ -12,7 +12,7 @@ getaccesstoken.open("POST", urltoken);
 getaccesstoken.send(JSON.stringify({
 	client_id = "83af441880ea9eca9533",
 	client_secret = "90b880f712bae73b7a4433ce27501bfd7d86de35",
-	code = `${code}`;
+	code = `${code}`
 }));
 
 getaccesstoken.onreadystatechange = (e) => {
