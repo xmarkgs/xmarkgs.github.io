@@ -4,7 +4,6 @@
 var window_code = window.location.search;
 var code = window_code.slice(6, 35);
 console.log(code);
-const sendcode = ;
 const xhr = new XMLHttpRequest();
 xhr.open("POST", `https://github.com/login/oauth/access_token`);
 xhr.setRequestHeader('Access-Control-Allow-Origin', 'application/json');
