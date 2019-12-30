@@ -100,7 +100,7 @@ h4{
 .planets_container{
 	width: 65vh;
 	height: 80vh;
-	animation: move_planets 3s ease-out infinite;
+	animation: move_planets 3s linear infinite;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -123,7 +123,7 @@ h4{
 		top: -0.7vh;
 		left: 0.7vh;
 	}
-	99%{
+	100%{
 		top: 0;
 		left: 0;
 		height: 80vh;
