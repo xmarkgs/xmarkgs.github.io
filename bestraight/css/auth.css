@@ -21,7 +21,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-left: 5vw;
+	position: relative;
 }
 h1{
 	font-weight: medium;
@@ -36,7 +36,7 @@ h2{
 	color: #828282;
 }
 .button_container{
-	width: 76%;
+	width: 60vh;
 	margin-top: 4.7vh;
 	display: flex;
 	justify-content: flex-end;
@@ -44,7 +44,7 @@ h2{
 button[type="button"]{
 	background: #212121;
 	border-radius: 0.8vh;
-	width: 13vw;
+	width: 23vh;
 	height: 6vh;
 	border: 0;
 	cursor: pointer;
@@ -57,20 +57,20 @@ h3{
 	font-weight: medium;
 	font-size: 2vh;
 	position: relative;
-	left: -1.25vw;
+	left: -2vh;
 }
 h3:before{
 	content: '';
 	position: absolute;
 	top: -0.3vh;
-	left: 12vw;
+	left: 20vh;
 	width: 3vh;
 	height: 3vh;
-	background: url(../img/github_icon.png) no-repeat;
+	background: url(../img/github_icon.svg) no-repeat;
 	background-size: contain;
 }
 .rightcol{
-	background: #C4C4C4;
+	background: #53526B;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -79,4 +79,53 @@ h4{
 	color:#212121;
 	font-size: 7.2vh;
 	font-weight: medium;
+}
+.leftcol_img:nth-child(1){
+	position: absolute;
+	top: 2.5vh;
+	left: 3vw;
+	width: 17vh;
+	height: 17vh;
+}
+.leftcol_img:nth-child(4){
+	position: absolute;
+	top: 75vh;
+	left: 65%;
+	width: 20vh;
+	height: 20vh;
+}
+.leftcol_img img{
+	height: 100%;
+}
+.planets_container{
+	width: 65vh;
+	height: 80vh;
+	animation: move_planets 3s ease-out infinite;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.planets_container img{
+	height: 100%;
+}
+@keyframes move_planets{
+	0%{
+		top: 0;
+		left: 0;
+		height: 80vh;
+	}
+	33%{
+		top: 0.7vh;
+		left: -0.7vh;
+		height: 80.5vh;
+	}
+	66%{
+		top: -0.7vh;
+		left: 0.7vh;
+	}
+	99%{
+		top: 0;
+		left: 0;
+		height: 80vh;
+	}
 }
