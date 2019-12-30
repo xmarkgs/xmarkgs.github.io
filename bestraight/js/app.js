@@ -1,5 +1,6 @@
 // JS App
-var code = window.location.search;
+const window_code = window.location.search;
+const code = window_code.slice(6, 35);
 console.log(code);
 const xhr = new XMLHttpRequest();
 xhr.open("POST", "https://github.com/login/oauth/access_token");
