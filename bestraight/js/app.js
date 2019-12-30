@@ -1,6 +1,6 @@
 // JS App
-const window_code = window.location.search;
-const code = window_code.slice(6, 35);
+// const window_code = window.location.search;
+const code =  window.location.search;
 console.log(code);
 const post = new XMLHttpRequest();
 const posturl = "https://github.com/login/oauth/access_token";
