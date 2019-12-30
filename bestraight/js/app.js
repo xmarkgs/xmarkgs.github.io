@@ -1,11 +1,11 @@
 // JS App
-// const window_code = window.location.search;
-let code = window.location.search;
+const window_code = window.location.search;
+let code = window_code.slice(6, 35);
 console.log(code);
 const post = new XMLHttpRequest();
 const posturl = "https://github.com/login/oauth/access_token";
 post.open("POST", posturl);
-post.setRequestHeader("Access-Control-Allow-Origin", "*");
+post.setRequestHeader("Access-Control-Allow-Origin", "https://github.com/login/oauth/access_token");
 post.setRequestHeader("Accept", "application/json");
 post.send({
 	client_id: "83af441880ea9eca9533", 
