@@ -5,6 +5,9 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+body{
+	background: #53526B;
+}
 *::selection{
 	color: #FFFFFF;
 	background: #212121;
