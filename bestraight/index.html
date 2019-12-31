@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="css/auth.css">
 	<!-- Meta for Media Queries -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<!-- wow.js CSS -->
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container wow slideInLeft">
 		<div class="leftcol">
 			<div class="leftcol_img">
 				<img src="img/planets.svg" alt="" class="unselectable">
@@ -35,6 +37,10 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- wow.js JS -->
+	<script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </body>
 </html>
