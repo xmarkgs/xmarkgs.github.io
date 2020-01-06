@@ -16,6 +16,8 @@ body{
 	width: 100%;
 	height: 100vh;
 	display: grid;
+	position: relative;
+	overflow: hidden;
 	grid-template:1fr / 1fr 1fr;
 }
 .leftcol{
@@ -145,6 +147,9 @@ h4{
 }
 
 @media (orientation:portrait){
+	body{
+		background: white;
+	}
 	.container{
 		grid-template:1fr / 1fr;
 	}

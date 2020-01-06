@@ -10,7 +10,6 @@ const exchangecode = {
 	code: `${code}`
 };
 post.open("POST", posturl);
-post.setRequestHeader("Access-Control-Allow-Origin", "https://github.com/login/oauth/access_token");
 post.setRequestHeader("Accept", "application/json");
 post.send(exchangecode);
 post.onreadystatechange = (e) => {
