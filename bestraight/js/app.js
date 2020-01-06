@@ -24,4 +24,7 @@ class GetUserToken extends React.Component{
 		<p>This is text.</p>
 	};
 };
-
+ReactDOM.render(
+	<GetUserToken />,
+	document.querySelector('.leftcol')
+);
