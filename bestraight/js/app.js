@@ -15,7 +15,7 @@ post.send(JSON.stringify({
 	client_secret: '90b880f712bae73b7a4433ce27501bfd7d86de35', 
 	code: code
 }));
-post.addEventListener('load', () => {
+post.onreadystatechange = (e) => {
 	const access_token = post.responseText;
 	console.log(access_token);
 };
