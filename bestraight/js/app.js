@@ -4,7 +4,7 @@
 
 let window_code = window.location.search;
 const code = window_code.slice(6, 35);
-console.log(code + ' - is the user code');
+console.log(code);
 
 const post = new XMLHttpRequest();
 post.open('POST', 'https://github.com/login/oauth/access_token', true);
@@ -20,7 +20,7 @@ post.addEventListener('load', () => {
 	console.log(access_token);
 };
 
-function GetUserToken(){
+function GetUserToken(props){
 	return (<p>This is yours access_token: {access_token}</p>);
 }
 
