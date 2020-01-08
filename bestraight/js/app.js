@@ -21,7 +21,7 @@ post.onreadystatechange = () => {
 };
 
 function GetUserToken(props){
-	return(<h1>This is yours token: {access_token}</h1>);
+	return(<h1>This is user token: {access_token}</h1>);
 }
 
 ReactDOM.render(

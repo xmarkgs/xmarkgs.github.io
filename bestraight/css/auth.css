@@ -40,6 +40,9 @@ h2{
 	line-height: 4.4vh;
 	color: #828282;
 }
+h4{
+	color:white;
+}
 .button_container{
 	width: 60vh;
 	margin-top: 4.7vh;
