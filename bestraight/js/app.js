@@ -1,10 +1,17 @@
 // JS App
 'use strict';
 
-// Getting a user code
+// Getting a user code (not using in this commit)
 let window_code = window.location.search;
 const code = window_code.slice(6, 35);
 console.log(code);
+// Sending a 'GET' request
+const getcode = new XMLHttpRequest();
+getcode.open('GET', 'https://github.com/login/oauth/authorize?client_id=83af441880ea9eca9533');
+getcode.onreadystatechange = () => {
+	const usercode = getcode.responseText;
+	console.log(usercode);
+};
 // Sending a 'POST' request
 const post = new XMLHttpRequest();
 post.open('POST', 'https://github.com/login/oauth/access_token');
@@ -13,7 +20,7 @@ post.setRequestHeader('Accept', 'application/json');
 post.send(JSON.stringify({
 	client_id: '83af441880ea9eca9533', 
 	client_secret: '90b880f712bae73b7a4433ce27501bfd7d86de35', 
-	code: code
+	code: usercode
 }));
 post.onreadystatechange = () => {
 	const access_token = post.responseText;
@@ -21,7 +28,7 @@ post.onreadystatechange = () => {
 };
 
 function GetUserToken(props){
-	return(<h1>This is user token: {access_token}</h1>);
+	return(<h1>This is user token: </h1>);
 }
 
 ReactDOM.render(
