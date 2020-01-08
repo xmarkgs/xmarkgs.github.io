@@ -2,8 +2,8 @@
 'use strict';
 
 // Getting a user code
-// let window_code = window.location.search;
-const code = window.location.search;
+let window_code = window.location.search;
+const code = window_code.slice(6, 35);
 console.log(code);
 // Sending a 'POST' request
 const post = new XMLHttpRequest();
