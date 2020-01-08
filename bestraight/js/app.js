@@ -2,8 +2,8 @@
 'use strict';
 
 // Getting a user code
-let window_code = window.location.search;
-const code = window_code.slice(6, 35);
+// let window_code = window.location.search;
+const code = window.location.search;
 console.log(code);
 // Sending a 'POST' request
 const post = new XMLHttpRequest();
@@ -21,7 +21,7 @@ post.onreadystatechange = () => {
 };
 
 function GetUserToken(props){
-	return(<h1>This is yours token:</h1>);
+	return(<h1>This is yours token: {access_token}</h1>);
 }
 
 ReactDOM.render(
