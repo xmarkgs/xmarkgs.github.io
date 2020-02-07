@@ -1,5 +1,6 @@
 /* Link to the custom font */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -122,6 +123,9 @@ div.section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.typing-study-container img{
+    width: 62vh;
 }
 .studying-resource-title{
     font-style: italic;

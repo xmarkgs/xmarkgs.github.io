@@ -48,6 +48,17 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     padding-left: 2vh;
 }
+#userstats{
+    width: 20vh;
+    height: 5.2vh;
+    font-size: 5vh;
+    color: white;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 5.7vh;
+}
 .game-container p{
     color: white;
     font-size: 5vh;

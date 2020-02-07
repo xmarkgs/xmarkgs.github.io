@@ -6,7 +6,9 @@ let randomizer,
 	randomletter,
 	randomLetterValue,
 	isGreen,
-	userinputvalue,
+	userStatsInput = document.querySelector('#userstats'),
+	userCorrectAns = 0,
+	userWrongAns = 0,
 	letters = [
 		["q", "a", "z", "Q", "A", "Z"],
 		["w", "s", "x", "W", "S", "X"],
@@ -45,35 +47,13 @@ function caseShorter() {
 		userinput.removeAttribute("readonly");
 		randomNumbers();
 		userinput.value = "";
+		userStatsInput.value = Math.round(userCorrectAns / (userCorrectAns + userWrongAns) * 100) + "%"; 
 	}, 2000);
 }
 
 userinput.oninput = () => {
 	gameFunction();
 };
-
-
-function UserInputIsString() {
-	userinputvalue = userinput.value;
-	if (userinputvalue.match(/^[-\+]?\d+/) === null) {
-		isGreen = false;
-	} else {
-		letters[userinput.value - 1].forEach(function (item) {
-			isGreen = false;
-			if (randomLetterValue == item) {
-				isGreen = true;
-
-			}
-
-		});
-	}
-	if (isGreen == true) {
-		document.getElementById("game_section").style.background = "linear-gradient(23.39deg, #269e4e, rgb(20, 199, 79))";
-	} else if (isGreen == false) {
-		document.getElementById("game_section").style.background = "linear-gradient(23.39deg, rgb(194, 40, 40), rgb(240, 61, 61))";
-	}
-	caseShorter();
-}
 
 function gameFunction() {
 	if (randomizer == 0) {
@@ -87,11 +67,31 @@ function gameFunction() {
 
 		if (isGreen == true) {
 			document.getElementById("game_section").style.background = "linear-gradient(23.39deg, #269e4e, rgb(20, 199, 79))";
+			userCorrectAns++;
 		} else if (isGreen == false) {
 			document.getElementById("game_section").style.background = "linear-gradient(23.39deg, rgb(194, 40, 40), rgb(240, 61, 61))";
+			userWrongAns++;
 		}
 		caseShorter();
 	} else if (randomizer == 1) {
-		UserInputIsString();
+		isGreen = false;
+		if (userinput.value.match(/^[-\+]?\d+/) === null) {
+			isGreen = false;
+		} else {
+			letters[userinput.value - 1].forEach(function (item) {
+				if (randomLetterValue == item) {
+					isGreen = true;
+				}
+	
+			});
+		}
+		if (isGreen == true) {
+			document.getElementById("game_section").style.background = "linear-gradient(23.39deg, #269e4e, rgb(20, 199, 79))";
+			userCorrectAns++;
+		} else if (isGreen == false) {
+			document.getElementById("game_section").style.background = "linear-gradient(23.39deg, rgb(194, 40, 40), rgb(240, 61, 61))";
+			userWrongAns++;
+		}
+		caseShorter();
 	}
 }
