@@ -249,6 +249,9 @@ iframe{
         margin-top: 1.5vh;
         margin-bottom: 1.5vh;
     }
+    .typing-study-container img{
+        width: 100%;
+    }
     iframe{
         width: 100%;
         height: 40vh;
