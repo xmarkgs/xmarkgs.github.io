@@ -12,20 +12,23 @@
     padding-left: 15%;
     padding-top: 3.5vh;
 }
-.link--to-main{
+
+.link--to-main {
     color: white;
     text-decoration: none;
     font-size: 3.5vh;
     font-weight: bold;
 }
-.game-container{
+
+.game-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 60vh;
 }
-.game-container input:nth-child(1){
+
+.game-container input:nth-child(2) {
     background: transparent;
     text-align: center;
     outline: 0;
@@ -35,7 +38,8 @@
     font-size: 4vh;
     width: 100%;
 }
-#userinput{
+
+#userinput {
     width: 35vh;
     height: 9vh;
     font-size: 5vh;
@@ -48,7 +52,8 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     padding-left: 2vh;
 }
-#userstats{
+
+#userstats {
     width: 20vh;
     height: 5.2vh;
     font-size: 5vh;
@@ -59,20 +64,36 @@
     font-weight: bold;
     padding-left: 5.7vh;
 }
-.game-container p{
-    color: white;
-    font-size: 5vh;
-    font-weight: bold;
-}
-.game-img{
+
+.game-img {
     width: 100vh;
     height: 30vh;
     background: url(../img/gameimg.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-@media (orientation: portrait){
-    .game-header{
+
+.mobile-game {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .game-header {
         padding-left: 5%;
+    }
+
+    .mobile-game {
+        display: block;
+        font-size: 3.5vh;
+        color: white;
+        font-weight: bold;
+    }
+
+    input {
+        display: none;
+    }
+
+    .game-img {
+        display: none;
     }
 }

@@ -252,8 +252,13 @@ iframe{
     .typing-study-container img{
         width: 100%;
     }
+    #section_4{
+        padding: 10vh 0 10vh 0;
+        justify-content: space-around;
+    }
     iframe{
         width: 100%;
         height: 40vh;
     }
+
 }
