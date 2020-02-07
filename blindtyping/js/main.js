@@ -1,23 +1,24 @@
 const input = document.querySelector("input");
 const userinput = document.querySelector("#userinput");
 
-let randomizer;
-let rand;
-let randomletter;
-let randomLetterValue;
-
-let letters = [
-	["q", "a", "z", "Q", "A", "Z"],
-	["w", "s", "x", "W", "S", "X"],
-	["e", "d", "c", "E", "D", "C"],
-	["r", "f", "v", "R", "F", "V", "t", "g", "b", "T", "G", "B"],
-	[" "],
-	[" "],
-	["u", "j", "n", "y", "h", "b", "Y", "H", "B", "U", "J", "N"],
-	["i", "k", "m", "I", "K", "M"],
-	["o", "l", "O", "L"],
-	["P", "p"]
-];
+let randomizer,
+	rand,
+	randomletter,
+	randomLetterValue,
+	isGreen,
+	userinputvalue,
+	letters = [
+		["q", "a", "z", "Q", "A", "Z"],
+		["w", "s", "x", "W", "S", "X"],
+		["e", "d", "c", "E", "D", "C"],
+		["r", "f", "v", "R", "F", "V", "t", "g", "b", "T", "G", "B"],
+		[" "],
+		[" "],
+		["u", "j", "n", "y", "h", "b", "Y", "H", "B", "U", "J", "N"],
+		["i", "k", "m", "I", "K", "M"],
+		["o", "l", "O", "L"],
+		["P", "p"]
+	];
 
 randomNumbers();
 
@@ -51,10 +52,33 @@ userinput.oninput = () => {
 	gameFunction();
 };
 
+
+function UserInputIsString() {
+	userinputvalue = userinput.value;
+	if (userinputvalue.match(/^[-\+]?\d+/) === null) {
+		isGreen = false;
+	} else {
+		letters[userinput.value - 1].forEach(function (item) {
+			isGreen = false;
+			if (randomLetterValue == item) {
+				isGreen = true;
+
+			}
+
+		});
+	}
+	if (isGreen == true) {
+		document.getElementById("game_section").style.background = "linear-gradient(23.39deg, #269e4e, rgb(20, 199, 79))";
+	} else if (isGreen == false) {
+		document.getElementById("game_section").style.background = "linear-gradient(23.39deg, rgb(194, 40, 40), rgb(240, 61, 61))";
+	}
+	caseShorter();
+}
+
 function gameFunction() {
-	let isGreen;
 	if (randomizer == 0) {
 		isGreen = false;
+
 		letters[rand - 1].forEach(function (item) {
 			if (userinput.value == item) {
 				isGreen = true;
@@ -68,18 +92,6 @@ function gameFunction() {
 		}
 		caseShorter();
 	} else if (randomizer == 1) {
-		isGreen = false;
-			letters[userinput.value - 1].forEach(function (item) {
-				if (randomLetterValue == item) {
-					isGreen = true;
-				}
-			});
-
-			if (isGreen == true) {
-				document.getElementById("game_section").style.background = "linear-gradient(23.39deg, #269e4e, rgb(20, 199, 79))";
-			} else if (isGreen == false) {
-				document.getElementById("game_section").style.background = "linear-gradient(23.39deg, rgb(194, 40, 40), rgb(240, 61, 61))";
-			}
-			caseShorter();
-		}
+		UserInputIsString();
+	}
 }
