@@ -34,6 +34,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+
+    @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+        width: 100%;
+    }
 }
 
 header {
@@ -43,6 +47,10 @@ header {
     display: flex;
     align-items: center;
     padding: 0 69px;
+
+    @media screen and (min-width: 1366px) and (max-width: 1650px) {
+        padding: 0;
+    }
 
     img:first {
         width: 163px;
@@ -329,6 +337,10 @@ header {
         flex-direction: column;
         padding: 120px 120px 162px 120px;
 
+        @media screen and (min-width: 1366px) and (max-width: 1650px) {
+            padding: 120px 80px;
+        }
+
         div:first-child {
             width: 100%;
             display: flex;
@@ -409,6 +421,10 @@ header {
     flex-direction: column;
     padding: 120px 120px 162px 120px;
 
+    @media screen and (min-width: 1366px) and (max-width: 1650px) {
+        padding: 120px 80px;
+    }
+
     div:first-child {
         width: 100%;
         display: flex;
@@ -485,6 +501,10 @@ header {
     height: 769px;
     background: #F7F7F7;
     padding: 120px 68.59px;
+
+    @media screen and (min-width: 1366px) and (max-width: 1650px) {
+        padding: 120px 30px;
+    }
 
     .cars-ad-title {
         width: 100%;
@@ -719,8 +739,17 @@ header {
     grid-template-rows: 1fr;
     grid-template-columns: 0.7fr 1.2fr;
     grid-column-gap: 100px;
-    padding: 120px 148px 200px 232px;
+    padding: 120px 10vw 200px 10vw;
     color: #1B1B1B;
+
+    @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+        grid-column-gap: 0;
+    }
+
+    @media screen and (min-width: 1366px) and (max-width: 1650px) {
+        grid-column-gap: 0;
+        padding: 120px 20px 200px 20px;
+    }
 
     form {
         // width: 335px;
@@ -894,6 +923,11 @@ footer {
     background: linear-gradient(180deg, #4D4D4D 0%, #000000 100%);
     padding: 30px 135px 72px 135px;
     color: #EDEDED;
+
+    @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+        width: 100%;
+        padding: 30px 10vw 6vh;
+    }
 
     .footer-info {
         display: flex;
