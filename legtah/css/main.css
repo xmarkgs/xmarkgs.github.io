@@ -38,9 +38,9 @@ header {
   align-items: center;
   padding: 0 69px;
 }
-@media screen and (min-width: 1366px) and (max-width: 1650px) {
+@media screen and (min-width: 1367px) and (max-width: 1650px) {
   header {
-    padding: 0;
+    padding: 0 20px;
   }
 }
 header img:first {
@@ -305,7 +305,7 @@ header .site-settings-container .header-site-options {
   flex-direction: column;
   padding: 120px 120px 162px 120px;
 }
-@media screen and (min-width: 1366px) and (max-width: 1650px) {
+@media screen and (min-width: 1367px) and (max-width: 1650px) {
   .findCarByBrand-container .select-brand-container {
     padding: 120px 80px;
   }
@@ -382,7 +382,7 @@ header .site-settings-container .header-site-options {
   flex-direction: column;
   padding: 120px 120px 162px 120px;
 }
-@media screen and (min-width: 1366px) and (max-width: 1650px) {
+@media screen and (min-width: 1367px) and (max-width: 1650px) {
   .select-carType-container {
     padding: 120px 80px;
   }
@@ -457,7 +457,7 @@ header .site-settings-container .header-site-options {
   background: #F7F7F7;
   padding: 120px 68.59px;
 }
-@media screen and (min-width: 1366px) and (max-width: 1650px) {
+@media screen and (min-width: 1367px) and (max-width: 1650px) {
   .cars-ad-container {
     padding: 120px 30px;
   }
@@ -673,10 +673,10 @@ header .site-settings-container .header-site-options {
     grid-column-gap: 0;
   }
 }
-@media screen and (min-width: 1366px) and (max-width: 1650px) {
+@media screen and (min-width: 1367px) and (max-width: 1650px) {
   .sell-your-car-container {
     grid-column-gap: 0;
-    padding: 120px 20px 200px 20px;
+    padding: 120px 90px 200px 90px;
   }
 }
 .sell-your-car-container form {
