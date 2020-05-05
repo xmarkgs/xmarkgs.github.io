@@ -192,6 +192,112 @@ header {
     }
 }
 
+.my-projects-container {
+    width: 100%;
+    padding: 60px 43px 275px 117px;
+    position: relative;
+    .flex(column, flex-start, flex-start);
+    background: @black;
+
+    h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        color: @white;
+        margin-bottom: 50px;
+
+        span {
+            color: @black;
+            background: @white;
+        }
+    }
+
+    .projects-list {
+        width: 100%;
+        .flex(row, space-between, flex-start);
+        flex-wrap: wrap;
+
+        .project {
+            .flex(column, space-between, flex-start);
+            width: 560px;
+            height: 584px;
+            margin-bottom: 10px;
+
+            img {
+                border-radius: 4px;
+                width: 100%;
+                height: 380px;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 42px;
+                color: @white;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 29px;
+                color: @white;
+            }
+
+            .project-actions {
+                width: 100%;
+                .flex(row, space-between, flex-start);
+
+                a {
+                    border: 4px solid #FDFFFC;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    width: 270px;
+                    height: 56.39px;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-decoration: none;
+                    .flex(row, center, center);
+                }
+
+                .project-source {
+                    background: linear-gradient(270deg, @black 50%, @white 50%);
+                    color: @black;
+
+                    span {
+                        color: @white;
+                        margin-right: -18px;
+                        margin-left: 12px;
+                    }
+                }
+
+                .project-live {
+                    background: linear-gradient(270deg, @white 50%, @black 50%);
+
+                    h6 {
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: @white;
+                        margin-right: 18px;
+                    }
+
+                    span {
+                        color: @black;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .attention-changer {
+        position: absolute;
+        bottom: 10vh;
+        left: 4.8vh;
+    }
+}
+
 .contact-me-container {
     width: 100%;
     height: 100vh;
@@ -267,7 +373,7 @@ header {
                     opacity: 1;
                 }
 
-                &:focus{
+                &:focus {
                     background: @black;
                 }
             }
@@ -291,7 +397,7 @@ header {
                 }
             }
 
-            .submitform{
+            .submitform {
                 width: 100px;
                 height: 50px;
                 background: @black;

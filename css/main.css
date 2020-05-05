@@ -177,6 +177,111 @@ header .header-menu a {
   bottom: 10vh;
   left: 4.8vh;
 }
+.my-projects-container {
+  width: 100%;
+  padding: 60px 43px 275px 117px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #0C0A13;
+}
+.my-projects-container h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FDFFFC;
+  margin-bottom: 50px;
+}
+.my-projects-container h2 span {
+  color: #0C0A13;
+  background: #FDFFFC;
+}
+.my-projects-container .projects-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.my-projects-container .projects-list .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 560px;
+  height: 584px;
+  margin-bottom: 10px;
+}
+.my-projects-container .projects-list .project img {
+  border-radius: 4px;
+  width: 100%;
+  height: 380px;
+}
+.my-projects-container .projects-list .project h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FDFFFC;
+}
+.my-projects-container .projects-list .project p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.my-projects-container .projects-list .project .project-actions a {
+  border: 4px solid #FDFFFC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 270px;
+  height: 56.39px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.my-projects-container .projects-list .project .project-actions .project-source {
+  background: linear-gradient(270deg, #0C0A13 50%, #FDFFFC 50%);
+  color: #0C0A13;
+}
+.my-projects-container .projects-list .project .project-actions .project-source span {
+  color: #FDFFFC;
+  margin-right: -18px;
+  margin-left: 12px;
+}
+.my-projects-container .projects-list .project .project-actions .project-live {
+  background: linear-gradient(270deg, #FDFFFC 50%, #0C0A13 50%);
+}
+.my-projects-container .projects-list .project .project-actions .project-live h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FDFFFC;
+  margin-right: 18px;
+}
+.my-projects-container .projects-list .project .project-actions .project-live span {
+  color: #0C0A13;
+  margin-left: 12px;
+}
+.my-projects-container .attention-changer {
+  position: absolute;
+  bottom: 10vh;
+  left: 4.8vh;
+}
 .contact-me-container {
   width: 100%;
   height: 100vh;
