@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -36,6 +37,12 @@ a {
   position: absolute;
   bottom: 150px;
   left: 1vh;
+  text-decoration: none;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .attention-changer {
+    display: none;
+  }
 }
 header {
   width: 100%;
@@ -58,6 +65,13 @@ header .header-title {
 header .header-title img {
   width: 381px;
   height: 122px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  header .header-title img {
+    width: 350px;
+  }
 }
 header .header-title h1 {
   color: #FDFFFC;
@@ -74,6 +88,12 @@ header .header-menu a {
   color: #FDFFFC;
   text-decoration: none;
   font-size: 18px;
+  transition: 0.3s;
+}
+header .header-menu a:hover {
+  background: #FDFFFC;
+  color: #0C0A13;
+  padding: 2px;
 }
 .about-me-container {
   width: 100%;
@@ -85,6 +105,15 @@ header .header-menu a {
   align-items: center;
   background: #FDFFFC;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container {
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 .about-me-container .short-story-container {
   width: 50%;
   display: flex;
@@ -93,11 +122,23 @@ header .header-menu a {
   align-items: center;
   padding: 0 0 0 53px;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .short-story-container {
+    width: 100%;
+    padding: 0;
+  }
+}
 .about-me-container .short-story-container .my-photo {
   width: 19.2vw;
   height: 19.2vw;
   border: 7px solid #0C0A13;
   border-radius: 100%;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .short-story-container .my-photo {
+    width: 22vh;
+    height: 22vh;
+  }
 }
 .about-me-container .short-story-container .short-story {
   width: 510px;
@@ -107,11 +148,25 @@ header .header-menu a {
   font-weight: normal;
   text-align: center;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .short-story-container .short-story {
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 12px;
+  }
+}
 .about-me-container .short-story-container .short-story h2 {
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
   margin-top: 10px;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .short-story-container .short-story h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 .about-me-container .skillset-whyme-container {
   width: 45%;
@@ -120,6 +175,12 @@ header .header-menu a {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 115px 0 0;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .skillset-whyme-container {
+    width: 100%;
+    padding: 0 0 0 12px;
+  }
 }
 .about-me-container .skillset-whyme-container .skillset-container {
   display: flex;
@@ -133,14 +194,24 @@ header .header-menu a {
   color: #0C0A13;
   margin-bottom: 25px;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .skillset-whyme-container .skillset-container h2 {
+    align-self: center;
+  }
+}
 .about-me-container .skillset-whyme-container .skillset-container .skills {
-  width: 100%;
+  width: 413px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 416px;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .about-me-container .skillset-whyme-container .skillset-container .skills {
+    padding-right: 12px;
+    width: 100%;
+  }
 }
 .about-me-container .skillset-whyme-container .skillset-container .skills img {
   width: 30%;
@@ -187,12 +258,22 @@ header .header-menu a {
   align-items: flex-start;
   background: #0C0A13;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .my-projects-container {
+    padding: 25px 12px;
+  }
+}
 .my-projects-container h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
   color: #FDFFFC;
   margin-bottom: 50px;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .my-projects-container h2 {
+    margin-bottom: 0;
+  }
 }
 .my-projects-container h2 span {
   color: #0C0A13;
@@ -213,7 +294,16 @@ header .header-menu a {
   align-items: flex-start;
   width: 560px;
   height: 584px;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .my-projects-container .projects-list .project {
+    width: 100%;
+    height: auto;
+  }
+  .my-projects-container .projects-list .project .project-about {
+    margin-bottom: 8px;
+  }
 }
 .my-projects-container .projects-list .project img {
   border-radius: 4px;
@@ -240,9 +330,7 @@ header .header-menu a {
   align-items: flex-start;
 }
 .my-projects-container .projects-list .project .project-actions a {
-  border: 4px solid #FDFFFC;
   box-sizing: border-box;
-  border-radius: 4px;
   width: 270px;
   height: 56.39px;
   font-weight: 500;
@@ -253,29 +341,94 @@ header .header-menu a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .my-projects-container .projects-list .project .project-actions a {
+    width: 48%;
+  }
+}
+.my-projects-container .projects-list .project .project-actions a div {
+  width: 50%;
+  height: 56.39px;
 }
 .my-projects-container .projects-list .project .project-actions .project-source {
-  background: linear-gradient(270deg, #0C0A13 50%, #FDFFFC 50%);
   color: #0C0A13;
 }
-.my-projects-container .projects-list .project .project-actions .project-source span {
+.my-projects-container .projects-list .project .project-actions .project-source div:nth-child(1) {
+  background: #FDFFFC;
+  color: #0C0A13;
+  transition: 0.3s;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+  border-top: 4px solid #FDFFFC;
+  border-left: 4px solid #FDFFFC;
+  border-bottom: 4px solid #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions .project-source div:nth-child(2) {
+  background: #0C0A13;
   color: #FDFFFC;
-  margin-right: -18px;
-  margin-left: 12px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0 4px 4px 0;
+  padding-left: 5px;
+  border-top: 4px solid #FDFFFC;
+  border-right: 4px solid #FDFFFC;
+  border-bottom: 4px solid #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions .project-source:hover div:nth-child(1) {
+  background: #0C0A13;
+  color: #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions .project-source:hover div:nth-child(2) {
+  background: #FDFFFC;
+  color: #0C0A13;
 }
 .my-projects-container .projects-list .project .project-actions .project-live {
-  background: linear-gradient(270deg, #FDFFFC 50%, #0C0A13 50%);
-}
-.my-projects-container .projects-list .project .project-actions .project-live h6 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
   color: #FDFFFC;
-  margin-right: 18px;
 }
-.my-projects-container .projects-list .project .project-actions .project-live span {
+.my-projects-container .projects-list .project .project-actions .project-live div:nth-child(1) {
+  background: #0C0A13;
+  color: #FDFFFC;
+  transition: 0.3s;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+  border-top: 4px solid #FDFFFC;
+  border-left: 4px solid #FDFFFC;
+  border-bottom: 4px solid #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions .project-live div:nth-child(2) {
+  background: #FDFFFC;
   color: #0C0A13;
-  margin-left: 12px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0 4px 4px 0;
+  padding-left: 5px;
+  border-top: 4px solid #FDFFFC;
+  border-right: 4px solid #FDFFFC;
+  border-bottom: 4px solid #FDFFFC;
+}
+.my-projects-container .projects-list .project .project-actions .project-live:hover div:nth-child(1) {
+  background: #FDFFFC;
+  color: #0C0A13;
+}
+.my-projects-container .projects-list .project .project-actions .project-live:hover div:nth-child(2) {
+  background: #0C0A13;
+  color: #FDFFFC;
 }
 .my-projects-container .attention-changer {
   position: absolute;
@@ -292,6 +445,12 @@ header .header-menu a {
   justify-content: space-between;
   align-items: center;
   padding: 80px 0 25px 0;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .contact-me-container {
+    height: auto;
+    padding: 25px 12px 12px;
+  }
 }
 .contact-me-container .contact-details {
   display: flex;
@@ -330,10 +489,20 @@ header .header-menu a {
   font-weight: 500;
   font-size: 36px;
 }
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .contact-me-container .contact-details .contacts .contact-element a {
+    font-size: 24px;
+  }
+}
 .contact-me-container .contact-details .contacts .contact-element h4 {
   color: #0C0A13;
   font-weight: 500;
   font-size: 36px;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .contact-me-container .contact-details .contacts .contact-element h4 {
+    font-size: 24px;
+  }
 }
 .contact-me-container .contact-details .contacts .contact-element img {
   margin-right: 8px;
@@ -344,6 +513,11 @@ header .header-menu a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .contact-me-container .contact-details form {
+    margin-bottom: 3.767vh;
+  }
 }
 .contact-me-container .contact-details form input {
   width: 100%;
@@ -369,6 +543,7 @@ header .header-menu a {
 .contact-me-container .contact-details form textarea {
   width: 100%;
   height: 150px;
+  min-height: 150px;
   background: #0C0A13;
   font-weight: normal;
   font-size: 24px;
@@ -378,6 +553,7 @@ header .header-menu a {
   border: 0;
   outline: 0;
   padding: 11px;
+  resize: vertical;
 }
 .contact-me-container .contact-details form textarea::placeholder {
   color: #FDFFFC;
@@ -394,14 +570,52 @@ header .header-menu a {
   font-family: 'Roboto', sans-serif;
   border: 0;
   outline: 0;
-  padding: 11px;
   user-select: none;
   -webkit-user-drag: none;
   cursor: pointer;
   margin: 25px auto;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me-container .contact-details form .submitform:hover {
+  background: #FDFFFC;
+  color: #0C0A13;
+  border: 2px solid #0C0A13;
 }
 .contact-me-container .attention-changer {
   position: absolute;
   bottom: 10vh;
   left: 4.8vh;
+}
+.coming-soon-page {
+  width: 100%;
+  height: 100vh;
+  background: #FDFFFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0C0A13;
+}
+.coming-soon-page h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.coming-soon-page h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.coming-soon-page a {
+  text-decoration: none;
+  background: #0C0A13;
+  color: #FDFFFC;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 2px;
+}
+.coming-soon-page a:hover {
+  background: #FDFFFC;
+  color: #0C0A13;
 }
