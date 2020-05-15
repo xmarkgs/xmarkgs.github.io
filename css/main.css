@@ -129,15 +129,14 @@ header .header-menu a:hover {
   }
 }
 .about-me-container .short-story-container .my-photo {
-  width: 19.2vw;
-  height: 19.2vw;
+  width: 39vh;
+  height: 39vh;
   border: 7px solid #0C0A13;
-  border-radius: 100%;
 }
 @media screen and (min-device-width: 360px) and (max-device-width: 640px) {
   .about-me-container .short-story-container .my-photo {
-    width: 22vh;
-    height: 22vh;
+    width: 30vh;
+    height: 30vh;
   }
 }
 .about-me-container .short-story-container .short-story {
