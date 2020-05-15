@@ -16,7 +16,7 @@
     //echo $name;
     //echo "<br>";
     //echo $email;
-    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:".$name.". E-mail: ".$email". Message:".$message" " ,"From: mraner123@gmail.com \r\n"))
+    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:".$name". E-mail: ".$email ","From: mraner123@gmail.com \r\n");)
     {     echo "Message sent successfully";
     } else {
         echo "Something went wrong...";
