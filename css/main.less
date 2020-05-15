@@ -68,7 +68,7 @@ a {
     left: 1vh;
     text-decoration: none;
 
-    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    @media screen and (min-width : 360px) and (max-width : 640px) {
         display: none;
     }
 }
@@ -90,7 +90,7 @@ header {
             height: 122px;
             .no-select();
 
-            @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+            @media screen and (min-width : 360px) and (max-width : 640px) {
                 width: 350px;
             }
         }
@@ -127,7 +127,7 @@ header {
     .flex(row, space-between, center);
     background: @white;
 
-    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    @media screen and (min-width : 360px) and (max-width : 640px) {
         padding: 25px 0 0 0;
         .flex(column, flex-start, flex-start);
     }
@@ -137,18 +137,18 @@ header {
         .flex(column, space-between, center);
         padding: 0 0 0 53px;
 
-        @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+        @media screen and (min-width : 360px) and (max-width : 640px) {
             width: 100%;
             padding: 0;
         }
 
         .my-photo {
-            width: 39vh;
-            height: 39vh;
+            width: 400px;
+            height: 400px;
             border: 7px solid @black;
 
 
-            @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+            @media screen and (min-width : 360px) and (max-width : 640px) {
                 width: 30vh;
                 height: 30vh;
             }
@@ -163,7 +163,7 @@ header {
             font-weight: normal;
             text-align: center;
 
-            @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+            @media screen and (min-width : 360px) and (max-width : 640px) {
                 width: 100%;
                 font-size: 18px;
                 line-height: 23px;
@@ -176,7 +176,7 @@ header {
                 line-height: 56px;
                 margin-top: 10px;
 
-                @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                @media screen and (min-width : 360px) and (max-width : 640px) {
                     font-size: 38px;
                     line-height: 46px;
                 }
@@ -189,7 +189,7 @@ header {
         .flex(column, space-between, flex-start);
         padding: 0 115px 0 0;
 
-        @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+        @media screen and (min-width : 360px) and (max-width : 640px) {
             width: 100%;
             padding: 0 0 0 12px;
         }
@@ -203,7 +203,7 @@ header {
                 color: @black;
                 margin-bottom: 25px;
 
-                @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                @media screen and (min-width : 360px) and (max-width : 640px) {
                     align-self: center;
                 }
             }
@@ -214,7 +214,7 @@ header {
                 flex-wrap: wrap;
                 
 
-                @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                @media screen and (min-width : 360px) and (max-width : 640px) {
                     padding-right: 12px;
                     width: 100%;
                 }
@@ -263,12 +263,12 @@ header {
 
 .my-projects-container {
     width: 100%;
-    padding: 60px 43px 275px 117px;
+    padding: 60px 2% 275px 5.8%;
     position: relative;
     .flex(column, flex-start, flex-start);
     background: @black;
 
-    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    @media screen and (min-width : 360px) and (max-width : 640px) {
         padding: 25px 12px;
     }
 
@@ -279,7 +279,7 @@ header {
         color: @white;
         margin-bottom: 50px;
 
-        @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+        @media screen and (min-width : 360px) and (max-width : 640px) {
             margin-bottom: 0;
         }
 
@@ -294,13 +294,21 @@ header {
         .flex(row, space-between, flex-start);
         flex-wrap: wrap;
 
+        @media screen and (min-width: 641px) and (max-width: 1400px){
+            .flex(row, center, flex-start);
+        }
+
         .project {
             .flex(column, space-between, flex-start);
             width: 560px;
             height: 584px;
             margin-bottom: 24px;
 
-            @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+            @media screen and (min-width: 641px) and (max-width: 1400px){
+                padding: 0 16px;
+            }
+
+            @media screen and (min-width : 360px) and (max-width : 640px) {
                 width: 100%;
                 height: auto;
 
@@ -344,8 +352,12 @@ header {
                     .flex(row, center, center);
                     .transition();
 
-                    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                    @media screen and (min-width : 360px) and (max-width : 640px) {
                         width: 48%;
+                    }
+
+                    @media screen and (min-width: 641px) and (max-width: 1400px){
+                        width: 49%;
                     }
 
                     div {
@@ -452,7 +464,7 @@ header {
     .flex(column, space-between, center);
     padding: 80px 0 25px 0;
 
-    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    @media screen and (min-width : 360px) and (max-width : 640px) {
         height: auto;
         padding: 25px 12px 12px;
     }
@@ -488,7 +500,7 @@ header {
                     font-weight: 500;
                     font-size: 36px;
 
-                    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                    @media screen and (min-width : 360px) and (max-width : 640px) {
                         font-size: 24px;
                     }
                 }
@@ -498,7 +510,7 @@ header {
                     font-weight: 500;
                     font-size: 36px;
 
-                    @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+                    @media screen and (min-width : 360px) and (max-width : 640px) {
                         font-size: 24px;
                     }
                 }
@@ -513,7 +525,7 @@ header {
             width: 360px;
             .flex(column, flex-start, flex-start);
 
-            @media screen and (min-device-width : 360px) and (max-device-width : 640px) {
+            @media screen and (min-width : 360px) and (max-width : 640px) {
                 margin-bottom: 3.767vh;
             }
 
