@@ -1,7 +1,7 @@
 <?php
     ini_set('display_errors','On');
     error_reporting('E_ALL');
-    $name = POST['name'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
     $name = htmlspecialchars($name);
@@ -13,11 +13,9 @@
     $name = trim($name);
     $email = trim($email);
     $message = trim($message);
-    //echo $name;
-    //echo "<br>";
-    //echo $email;
-    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:".$name". E-mail: ".$email ","From: mraner123@gmail.com \r\n");)
+    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:$name. E-mail:$email. Message:$message","From: mraner123@gmail.com \r\n"))
     {     echo "Message sent successfully";
     } else {
         echo "Something went wrong...";
+    }
 ?>
