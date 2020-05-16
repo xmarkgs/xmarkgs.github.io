@@ -13,7 +13,7 @@
     $name = trim($name);
     $email = trim($email);
     $message = trim($message);
-    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:$name. E-mail:$email. Message:$message","From: mraner123@gmail.com \r\n"))
+    if (mail("markozhyvotkov@gmail.com", "Message from Portfolio", "Name:$name. E-mail:$email. Message:$message","From: markozhyvotkov@gmail.com \r\n"))
     {     echo "Message sent successfully";
     } else {
         echo "Something went wrong...";
