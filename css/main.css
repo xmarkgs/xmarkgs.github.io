@@ -460,71 +460,74 @@ header .header-menu a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 80px 0 25px 0;
+  align-items: flex-start;
+  padding: 62px 0 25px 0;
 }
 @media screen and (min-width: 360px) and (max-width: 640px) {
   .contact-me-container {
-    height: auto;
-    padding: 25px 12px 12px;
+    padding: 25px 0 12px;
   }
 }
-.contact-me-container .contact-details {
+.contact-me-container .contact-info {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 100px;
 }
-.contact-me-container .contact-details h2 {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  text-transform: capitalize;
-  color: #0C0A13;
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info {
+    padding: 0 50px;
+  }
 }
-.contact-me-container .contact-details h2 span {
-  color: #FDFFFC;
-  background: #0C0A13;
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
-.contact-me-container .contact-details .contacts {
+.contact-me-container .contact-info .contact-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 25px;
 }
-.contact-me-container .contact-details .contacts .contact-element {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.contact-me-container .contact-details .contacts .contact-element a {
-  text-decoration: none;
+.contact-me-container .contact-info .contact-details h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: capitalize;
   color: #0C0A13;
-  font-weight: 500;
-  font-size: 36px;
 }
-@media screen and (min-width: 360px) and (max-width: 640px) {
-  .contact-me-container .contact-details .contacts .contact-element a {
-    font-size: 24px;
+.contact-me-container .contact-info .contact-details h2 span {
+  color: #FDFFFC;
+  background: #0C0A13;
+}
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info .contact-details h2 {
+    font-size: 36px;
   }
 }
-.contact-me-container .contact-details .contacts .contact-element h4 {
+.contact-me-container .contact-info .contact-details h3 {
   color: #0C0A13;
-  font-weight: 500;
-  font-size: 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
 }
-@media screen and (min-width: 360px) and (max-width: 640px) {
-  .contact-me-container .contact-details .contacts .contact-element h4 {
-    font-size: 24px;
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info .contact-details h3 {
+    font-size: 42px;
   }
 }
-.contact-me-container .contact-details .contacts .contact-element img {
-  margin-right: 8px;
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contact-details h3 {
+    font-size: 10vw;
+  }
 }
-.contact-me-container .contact-details form {
+.contact-me-container .contact-info .contact-details form {
   width: 360px;
   display: flex;
   flex-direction: column;
@@ -532,11 +535,11 @@ header .header-menu a:hover {
   align-items: flex-start;
 }
 @media screen and (min-width: 360px) and (max-width: 640px) {
-  .contact-me-container .contact-details form {
+  .contact-me-container .contact-info .contact-details form {
     margin-bottom: 3.767vh;
   }
 }
-.contact-me-container .contact-details form input {
+.contact-me-container .contact-info .contact-details form input {
   width: 100%;
   height: 50px;
   margin-bottom: 25px;
@@ -550,14 +553,14 @@ header .header-menu a:hover {
   outline: 0;
   padding: 11px;
 }
-.contact-me-container .contact-details form input::placeholder {
+.contact-me-container .contact-info .contact-details form input::placeholder {
   color: #FDFFFC;
   opacity: 1;
 }
-.contact-me-container .contact-details form input:focus {
+.contact-me-container .contact-info .contact-details form input:focus {
   background: #0C0A13;
 }
-.contact-me-container .contact-details form textarea {
+.contact-me-container .contact-info .contact-details form textarea {
   width: 100%;
   height: 150px;
   min-height: 150px;
@@ -572,11 +575,11 @@ header .header-menu a:hover {
   padding: 11px;
   resize: vertical;
 }
-.contact-me-container .contact-details form textarea::placeholder {
+.contact-me-container .contact-info .contact-details form textarea::placeholder {
   color: #FDFFFC;
   opacity: 1;
 }
-.contact-me-container .contact-details form .submitform {
+.contact-me-container .contact-info .contact-details form .submitform {
   width: 100px;
   height: 50px;
   background: #0C0A13;
@@ -596,15 +599,117 @@ header .header-menu a:hover {
   justify-content: center;
   align-items: center;
 }
-.contact-me-container .contact-details form .submitform:hover {
+.contact-me-container .contact-info .contact-details form .submitform:hover {
   background: #FDFFFC;
   color: #0C0A13;
   border: 2px solid #0C0A13;
 }
-.contact-me-container .attention-changer {
-  position: absolute;
-  bottom: 10vh;
-  left: 4.8vh;
+.contact-me-container .contact-info .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  margin-top: 56px;
+}
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info .contacts {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contacts {
+    margin: 0;
+  }
+}
+.contact-me-container .contact-info .contacts .mail-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: -56px;
+}
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info .contacts .mail-link {
+    margin-top: -36px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contacts .mail-link {
+    margin: 0;
+  }
+}
+.contact-me-container .contact-info .contacts .mail-link a {
+  text-decoration: none;
+  color: #0C0A13;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contacts .mail-link a {
+    font-size: 24px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1400px) {
+  .contact-me-container .contact-info .contacts .mail-link a {
+    font-size: 48px;
+  }
+}
+.contact-me-container .contact-info .contacts .mail-link img {
+  margin-top: 12px;
+  margin-right: 8px;
+}
+.contact-me-container .contact-info .contacts .contact-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.contact-me-container .contact-info .contacts .contact-element a {
+  text-decoration: none;
+  color: #0C0A13;
+  font-weight: 500;
+  font-size: 36px;
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contacts .contact-element a {
+    font-size: 24px;
+  }
+}
+.contact-me-container .contact-info .contacts .contact-element h4 {
+  color: #0C0A13;
+  font-weight: 500;
+  font-size: 36px;
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .contact-info .contacts .contact-element h4 {
+    font-size: 24px;
+  }
+}
+.contact-me-container .contact-info .contacts .contact-element img {
+  margin-right: 8px;
+}
+.contact-me-container .bg-text {
+  user-select: none;
+  -webkit-user-drag: none;
+  width: 100%;
+  height: 270px;
+  background: url(../img/futurecooperation.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .contact-me-container .bg-text {
+    display: none;
+  }
+}
+.contact-me-container img[alt="Marko Zhyvotkov"] {
+  margin: 0 auto;
 }
 .coming-soon-page {
   width: 100%;
