@@ -20,19 +20,36 @@
     align-items: @align-items;
 }
 
-// Font weights
+.no-select() {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+// Font styles
 
 .heading {
+    font-weight: 600;
     font-size: 48px;
 }
 
 .second-heading {
+    font-weight: normal;
     font-size: 36px;
 }
 
 .regular {
     font-weight: normal;
     font-size: 24px;
+}
+
+.underlined {
+    text-decoration: underline;
+    color: @grey;
+    transition: @transition;
+
+    &:hover {
+        color: @accent-color;
+    }
 }
 
 // Font colors
@@ -47,6 +64,10 @@
 
 .c-accent {
     color: @accent-color;
+}
+
+.c-white {
+    color: @white;
 }
 
 // Main CSS
@@ -64,7 +85,7 @@ header {
     .flex(column, space-between, flex-start);
     padding: 100px;
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
         padding: 65px;
     }
 
@@ -79,7 +100,7 @@ header {
             color: @black;
             margin-bottom: 60px;
 
-            @media screen and (max-width: 1440px){
+            @media screen and (max-width: 1440px) {
                 font-size: 144px;
             }
         }
@@ -102,7 +123,7 @@ header {
                 transition: @transition;
                 position: relative;
 
-                &::before{
+                &::before {
                     content: "";
                     width: 100%;
                     height: 3px;
@@ -114,14 +135,163 @@ header {
                     transition: @transition;
                 }
 
-                &:hover{
+                &:hover {
                     color: @accent-color;
                 }
 
-                &:hover::before{
+                &:hover::before {
                     opacity: 1;
                 }
             }
         }
+
+        img{
+            .no-select();
+        }
     }
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: @accent-color;
+    position: relative;
+
+    @media screen and (max-height: 800px) and (max-width: 1440px){
+        height: 800px;
+    }
+
+    .about-me {
+        width: 50%;
+        .flex(column, center, center);
+
+        @media screen and (max-height: 800) and (max-width: 1440px){
+            height: 800px;
+        }
+
+        img {
+            margin-bottom: 12px;
+            .no-select();
+
+            @media screen and (max-width: 1440px){
+                width: 310px;
+            }
+        }
+
+        p {
+            width: 394px;
+            text-align: center;
+        }
+    }
+
+    .my-skill-set {
+        width: 50%;
+        height: 95vh;
+        background: @white;
+        .flex(column, space-between, flex-start);
+        padding: 50px 100px 100px;
+        margin-top: auto;
+
+        @media screen and (max-height: 800px) and (max-width: 1440px){
+            margin-top: 50px;
+            height: 750px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 24px;
+            }
+
+            .hard-skills {
+                margin-left: 27px;
+
+                span {
+                    position: relative;
+
+                    &:nth-child(1)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/html5icon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(3)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/css3icon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(5)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/jsicon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(7)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/lessicon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(9)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/figmaicon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    &:nth-child(11)::before {
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        left: -27px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../icons/giticon.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
 }
