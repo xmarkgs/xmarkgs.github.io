@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Gothic A1', sans-serif;
+  scroll-behavior: smooth;
 }
 .heading {
   font-weight: 600;
@@ -23,6 +24,14 @@
 }
 .underlined:hover {
   color: #0E8DF2;
+}
+::selection {
+  color: #ffffff;
+  background: #393939;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: #0E8DF2;
 }
 .c-black {
   color: #393939;
@@ -72,6 +81,12 @@ header .title-wrapper .page-title {
     font-size: 144px;
   }
 }
+@media screen and (max-width: 920px) {
+  header .title-wrapper .page-title {
+    font-size: 96px;
+    margin-bottom: 10px;
+  }
+}
 header .anchor-menu {
   width: 100%;
   display: flex;
@@ -112,9 +127,19 @@ header .anchor-menu .anchors-wrapper a:hover {
 header .anchor-menu .anchors-wrapper a:hover::before {
   opacity: 1;
 }
+@media screen and (max-width: 920px) {
+  header .anchor-menu .anchors-wrapper a {
+    font-size: 28px;
+  }
+}
 header .anchor-menu img {
   user-select: none;
   -webkit-user-drag: none;
+}
+@media screen and (max-width: 920px) {
+  header .anchor-menu img {
+    width: 140px;
+  }
 }
 .about {
   width: 100%;
@@ -126,6 +151,11 @@ header .anchor-menu img {
 @media screen and (max-height: 800px) and (max-width: 1440px) {
   .about {
     height: 800px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .about {
+    height: auto;
   }
 }
 .about .about-me {
@@ -150,9 +180,19 @@ header .anchor-menu img {
     width: 310px;
   }
 }
+@media screen and (max-width: 1040px) {
+  .about .about-me img {
+    width: 280px;
+  }
+}
 .about .about-me p {
   width: 394px;
   text-align: center;
+}
+@media screen and (max-height: 800px), (max-width: 1040px) {
+  .about .about-me p {
+    font-size: 20px;
+  }
 }
 .about .my-skill-set {
   width: 50%;
@@ -171,12 +211,34 @@ header .anchor-menu img {
     height: 750px;
   }
 }
+@media screen and (max-width: 1040px) {
+  .about .my-skill-set {
+    margin-top: 50px;
+    height: auto;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 1040px), (max-height: 800px) {
+  .about .my-skill-set a {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-height: 800px) {
+  .about .my-skill-set a {
+    font-size: 20px;
+  }
+}
 .about .my-skill-set .skill-list {
   display: flex;
   flex-direction: column;
 }
 .about .my-skill-set .skill-list h2 {
   margin-bottom: 24px;
+}
+@media screen and (max-height: 800px) and (max-width: 1440px) {
+  .about .my-skill-set .skill-list p {
+    font-size: 20px;
+  }
 }
 .about .my-skill-set .skill-list .hard-skills {
   margin-left: 27px;
@@ -255,4 +317,190 @@ header .anchor-menu img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.projects {
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1040px) {
+  .projects {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .projects {
+    padding: 50px;
+  }
+}
+.projects h2 {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 1440px) {
+  .projects h2 {
+    font-size: 36px;
+  }
+}
+.projects .projects-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1040px) {
+  .projects .projects-list {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.projects .projects-list .project {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1040px) {
+  .projects .projects-list .project {
+    width: 350px;
+    margin-bottom: 24px;
+    padding: 5px;
+  }
+}
+.projects .projects-list .project p {
+  margin-bottom: 24px;
+}
+@media screen and (max-height: 800px), (max-width: 1440px) {
+  .projects .projects-list .project p {
+    font-size: 20px;
+  }
+}
+.projects .projects-list .project img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+@media screen and (max-height: 800px), (max-width: 1440px) {
+  .projects .projects-list .project h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .projects .projects-list .project .project-actions a {
+    font-size: 20px;
+  }
+}
+.projects .projects-list .project .project-actions a:nth-child(2) {
+  margin-left: 40px;
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../img/contactbg.svg);
+  background-size: cover;
+}
+.contact .contact-me {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1040px) {
+  .contact .contact-me {
+    top: 50px;
+    left: 50px;
+  }
+}
+.contact .contact-me .contact-title {
+  font-size: 144px;
+  color: #393939;
+  line-height: 92%;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-me .contact-title {
+    font-size: 96px;
+  }
+}
+.contact .contact-me .contact-options {
+  display: flex;
+}
+.contact .contact-me .contact-options .contact-via {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-me .contact-options .contact-via h3 {
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-me .contact-options .contact-via h3 {
+    font-size: 24px;
+    margin-bottom: 11px;
+  }
+}
+.contact .contact-me .contact-options .contact-via a {
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-me .contact-options .contact-via a {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+}
+.contact .contact-me .contact-options .contact-location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 43px;
+}
+.contact .contact-me .contact-options .contact-location h3 {
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-me .contact-options .contact-location h3 {
+    font-size: 24px;
+    margin-bottom: 11px;
+  }
+}
+.contact .contact-me .contact-options .contact-location p {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-me .contact-options .contact-location p {
+    font-size: 18px;
+  }
+}
+.contact .contact-logo {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+@media screen and (max-width: 1200px) {
+  .contact .contact-logo {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .contact .contact-logo {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .contact .contact-logo {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-logo {
+    bottom: 50px;
+    right: 50px;
+  }
 }
