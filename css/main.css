@@ -54,15 +54,21 @@
 header {
   width: 100%;
   height: 100vh;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 100px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-height: 750px) {
   header {
-    padding: 65px;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header {
+    padding: 50px;
   }
 }
 @media screen and (max-width: 760px) {
@@ -455,6 +461,7 @@ header .anchor-menu img {
 .projects {
   width: 100%;
   height: 100vh;
+  min-height: 840px;
   padding: 100px;
   background: #ffffff;
   display: flex;
@@ -468,6 +475,11 @@ header .anchor-menu img {
 @media screen and (max-width: 1440px) {
   .projects {
     padding: 50px;
+  }
+}
+@media screen and (max-height: 840px) {
+  .projects {
+    min-height: auto;
   }
 }
 @media screen and (max-width: 760px) {
@@ -563,9 +575,15 @@ header .anchor-menu img {
 .contact {
   width: 100%;
   height: 100vh;
+  min-height: 750px;
   position: relative;
   background: url(../img/contactbg.svg);
   background-size: cover;
+}
+@media screen and (max-height: 750px) {
+  .contact {
+    min-height: auto;
+  }
 }
 @media screen and (max-width: 760px) {
   .contact {
@@ -581,7 +599,7 @@ header .anchor-menu img {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1440px) {
   .contact .contact-me {
     top: 50px;
     left: 50px;
@@ -598,7 +616,7 @@ header .anchor-menu img {
   color: #393939;
   line-height: 92%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .contact .contact-me .contact-title {
     font-size: 96px;
   }
