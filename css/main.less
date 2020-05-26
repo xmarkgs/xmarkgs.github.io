@@ -97,7 +97,7 @@ header {
     .flex(column, space-between, flex-start);
     padding: 100px;
 
-    @media screen and (max-height: 750px){
+    @media screen and (max-height: 750px) {
         min-height: auto;
     }
 
@@ -589,7 +589,7 @@ header {
     background: url(../img/contactbg.svg);
     background-size: cover;
 
-    @media screen and (max-height: 750px){
+    @media screen and (max-height: 750px) {
         min-height: auto;
     }
 
@@ -749,6 +749,38 @@ header {
 
         @media screen and (max-width: 365px) {
             width: 240px;
+        }
+    }
+}
+
+.soonpage-title {
+    font-size: 36px;
+    color: @white;
+    background: @accent-color;
+    margin: 100px 100px 24px 100px;
+    padding: 5px;
+
+    @media screen and (max-width: 760px) {
+        margin: 24px;
+    }
+
+    &~a {
+        font-size: 24px;
+        color: @white;
+        background: @accent-color;
+        margin: 0 100px;
+        padding: 5px;
+        text-decoration: none;
+        transition: @transition;
+
+        &:hover{
+            background: @white;
+            color: @grey;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 760px) {
+            margin: 0 24px;
         }
     }
 }

@@ -758,3 +758,34 @@ header .anchor-menu img {
     width: 240px;
   }
 }
+.soonpage-title {
+  font-size: 36px;
+  color: #ffffff;
+  background: #0E8DF2;
+  margin: 100px 100px 24px 100px;
+  padding: 5px;
+}
+@media screen and (max-width: 760px) {
+  .soonpage-title {
+    margin: 24px;
+  }
+}
+.soonpage-title ~ a {
+  font-size: 24px;
+  color: #ffffff;
+  background: #0E8DF2;
+  margin: 0 100px;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.soonpage-title ~ a:hover {
+  background: #ffffff;
+  color: #606060;
+  text-decoration: underline;
+}
+@media screen and (max-width: 760px) {
+  .soonpage-title ~ a {
+    margin: 0 24px;
+  }
+}
