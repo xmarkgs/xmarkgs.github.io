@@ -744,7 +744,7 @@ header .nav-container .menu-items li a {
   margin: 0 10px;
   line-height: 100px;
   position: relative;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Archivo', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -959,7 +959,7 @@ header .contact-btn .auth-btn{
 
 header .contact-btn .login-btn{
   background: #FFFFFF;
-  border: 1px solid #272A32;
+  border: 1px solid #D9D9D9;
   color: #272A32;
 }
 
