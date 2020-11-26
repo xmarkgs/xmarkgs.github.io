@@ -1,0 +1,51 @@
+/*=======  Call to Action  =======*/
+.cta-section {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-color: $black;
+    padding-top: 120px;
+    padding-bottom: 350px;
+
+    @include respond-below(lg) {
+        padding-bottom: 230px;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        content: "";
+        background-color: $text-color;
+        opacity: 0.6;
+    }
+
+    .cta-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        li {
+            padding: 0px 10px;
+
+            @include respond-below(xs) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .main-btn.main-btn-2 {
+            border-color: rgba($white, $alpha: 0.2);
+            color: $white;
+
+            &:hover {
+                border-color: $text-color;
+            }
+        }
+    }
+}

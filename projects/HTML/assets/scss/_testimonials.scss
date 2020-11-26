@@ -1,0 +1,185 @@
+/*======= Testimonials =======*/
+.testimonials-section {
+    .testimonials-inner {
+        background-color: $primary-color;
+        padding: 100px 170px;
+        position: relative;
+        z-index: 1;
+
+        @include respond-below(lg) {
+            padding: 100px 100px;
+        }
+
+        @include respond-below(md) {
+            padding: 80px 50px;
+        }
+
+        @include respond-below(sm) {
+            padding: 80px 30px;
+        }
+
+        @include respond-below(xs) {
+            padding: 80px 15px;
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            content: "";
+            background-image: url(../img/testi-illustration.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .single-testimonial {
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.4;
+
+            @include respond-below(lg) {
+                font-size: 20px;
+            }
+
+            @include respond-below(sm) {
+                font-size: 18px;
+            }
+
+            @include respond-below(xs) {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .atuthor-thumb {
+                margin-bottom: 50px;
+
+                img {
+                    max-width: 120px;
+                    max-height: 120px;
+                }
+            }
+
+            .atuthor-info {
+                margin-top: 40px;
+                line-height: 1;
+
+                .name {
+                    font-size: 30px;
+                    letter-spacing: -1px;
+                    text-transform: uppercase;
+                    line-height: 1;
+
+                    @include respond-below(sm) {
+                        font-size: 24px;
+                    }
+
+                    @include respond-below(xs) {
+                        font-size: 20px;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    font-family: $raj;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &.style-two {
+        position: relative;
+
+        .testimonials-inner {
+            background-color: transparent;
+
+            &::before {
+                opacity: 0.3;
+            }
+
+            .single-testimonial {
+                .atuthor-thumb img {
+                    box-shadow: 0px 8px 16px 0px rgba(7, 28, 31, 0.06);
+                    border: 10px solid $white;
+                }
+
+                .atuthor-info span {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .thumb-images img {
+            position: absolute;
+            z-index: 2;
+            max-width: 80px;
+            max-height: 80px;
+
+            @include respond-below(md) {
+                max-width: 50px;
+                max-height: 50px;
+            }
+
+            @include respond-below(xs) {
+                display: none;
+            }
+
+            &:nth-child(1) {
+                left: 25%;
+                top: 15%;
+
+                @include respond-below(c1350) {
+                    left: 15%;
+                }
+
+                @include respond-below(lg) {
+                    left: 10%;
+                }
+            }
+
+            &:nth-child(2) {
+                left: 15%;
+                bottom: 15%;
+
+                @include respond-below(c1350) {
+                    left: 8%;
+                }
+
+                @include respond-below(lg) {
+                    left: 5%;
+                }
+            }
+
+            &:nth-child(3) {
+                right: 15%;
+                top: 15%;
+
+                @include respond-below(c1350) {
+                    right: 8%;
+                }
+
+                @include respond-below(lg) {
+                    right: 5%;
+                }
+            }
+
+            &:nth-child(4) {
+                right: 25%;
+                bottom: 15%;
+
+                @include respond-below(c1350) {
+                    right: 15%;
+                }
+
+                @include respond-below(lg) {
+                    right: 10%;
+                }
+            }
+        }
+    }
+}

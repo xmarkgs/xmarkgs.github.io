@@ -1,0 +1,192 @@
+/*======= Services =======*/
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 2px solid $soft-gery;
+    border-left: 2px solid $soft-gery;
+
+    @include respond-below(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-below(xs) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-box {
+        background-color: $white;
+        padding: 45px 40px;
+        border-right: 2px solid $soft-gery;
+        border-bottom: 2px solid $soft-gery;
+
+        .icon {
+            font-size: 60px;
+            color: $primary-color;
+            margin-bottom: 35px;
+            line-height: 1;
+        }
+
+        .title {
+            font-size: 24px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 70px;
+
+            @include respond-below(sm) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .service-link {
+            color: #d5d9da;
+            font-size: 24px;
+            line-height: 1;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.service-section {
+    position: relative;
+    z-index: 2;
+
+    &.with-counter-box {
+        .service-boxes {
+            @include respond-above(md) {
+                margin-left: 40px;
+            }
+        }
+
+        .counter-boxes {
+            @include respond-below(lg) {
+                margin-bottom: 40px;
+            }
+
+            .counter-box {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $raj;
+                text-transform: uppercase;
+                line-height: 1;
+
+                @include respond-below(lg) {
+                    text-align: center;
+                }
+
+                .count {
+                    display: block;
+                    font-size: 55px;
+                    margin-bottom: 5px;
+
+                    @include respond-below(xs) {
+                        font-size: 42px;
+                        margin-bottom: 10px;
+                    }
+
+                    &::after {
+                        content: "+";
+                        color: $primary-color;
+                        font-size: 16px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+
+            &>[class*=col-]:not(:last-child) {
+                .counter-box {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.service-gallery {
+    width: 100%;
+    height: 535px;
+    position: relative;
+
+    @include respond-below(xs) {
+        height: 450px;
+    }
+
+    @include respond-below(lg) {
+        margin-bottom: 50px;
+    }
+
+    .image-one,
+    .image-two {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-color: #ddd;
+        width: 400px;
+
+        @include respond-below(xs) {
+            width: 75%;
+        }
+    }
+
+    .image-one {
+        top: 0;
+        right: 0;
+        height: 320px;
+
+        @include respond-below(xs) {
+            height: 260px;
+        }
+    }
+
+    .image-two {
+        bottom: 0;
+        left: 35px;
+        height: 270px;
+        border: 10px solid $white;
+
+        @include respond-below(xs) {
+            height: 240px;
+        }
+
+        @include respond-below(xs) {
+            left: 0;
+        }
+    }
+}
+
+.frameworks-list {
+    margin-top: 40px;
+
+    li {
+        font-weight: 700;
+        font-family: $raj;
+        font-size: 18px;
+        text-transform: uppercase;
+        float: left;
+        margin-bottom: 15px;
+        width: 30.33%;
+
+        @include respond-below(lg) {
+            width: 33.33%;
+        }
+
+        @include respond-below(xs) {
+            width: 50%;
+        }
+
+        i {
+            color: $primary-color;
+            margin-right: 15px;
+
+            @include respond-below(xs) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &.white-color li {
+        color: $white;
+    }
+}

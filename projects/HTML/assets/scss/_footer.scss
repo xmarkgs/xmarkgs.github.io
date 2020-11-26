@@ -1,0 +1,225 @@
+/*======= Footer =======*/
+footer {
+    position: relative;
+    position: relative;
+    background-color: $white;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/pattern/02.png);
+        z-index: -1;
+        content: "";
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .footer-widgets {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        .widget {
+            margin-bottom: 50px;
+
+            .widget-title {
+                text-transform: uppercase;
+                font-size: 24px;
+                letter-spacing: -1px;
+                margin-bottom: 35px;
+            }
+
+            &.text-block-widget {
+                @include respond-above(xs) {
+                    padding-right: 40px;
+                }
+
+                .read-more-btn {
+                    font-size: 16px;
+                    font-family: $raj;
+                    font-weight: 700;
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    color: $text-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    position: relative;
+                    background-image: linear-gradient(to right, $primary-color, $primary-color, 50%, $text-color 50%);
+                    background-size: 200% 100%;
+                    background-position: 100%;
+
+                    &::before {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-image: linear-gradient(to right, $primary-color, $primary-color, 50%, $text-color 50%);
+                        background-size: 200% 100%;
+                        background-position: 100%;
+                        content: "";
+                        @include transition(0.3s);
+                    }
+
+                    &:hover {
+
+                        &,
+                        &::before {
+                            background-position: 0% 100%;
+                        }
+                    }
+                }
+            }
+
+            &.menu-widget {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+
+                    a {
+                        font-family: $raj;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: $text-color;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        position: relative;
+                        background-image: linear-gradient(to right, $primary-color, $primary-color, 50%, $text-color 50%);
+                        background-size: 200% 100%;
+                        background-position: 100%;
+
+                        &:hover {
+                            background-position: 0% 100%;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            &.newsletter-widget {
+                .input-group {
+                    margin-bottom: 10px;
+                }
+
+                .main-btn {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 52px;
+                }
+
+                input {
+                    background-color: #f5f9fa;
+                    font-size: 14px;
+                }
+            }
+
+            &.latest-post-widget {
+                li {
+                    display: grid;
+                    grid-template-columns: 70px 1fr;
+                    align-items: center;
+                    gap: 15px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+
+                    .post-thumb {
+                        background-size: cover;
+                        background-position: center;
+                        height: 60px;
+                        width: 70px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                        font-family: $raj;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        letter-spacing: -1px;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 25px 0;
+        background-color: #f5f9fa;
+
+        .copyright {
+            font-family: $raj;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @include respond-below(sm) {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            @include respond-below(xs) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &.footer-two {
+        background-color: $text-color;
+        background-image: url(../img/pattern/03.jpg);
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            display: none;
+        }
+
+        .footer-widgets {
+            .widget {
+
+                &,
+                .widget-title {
+                    color: $white;
+                }
+
+                &.text-block-widget .read-more-btn,
+                &.text-block-widget .read-more-btn::before,
+                &.menu-widget li a {
+                    color: $white;
+                    background-image: linear-gradient(to right, $primary-color, $primary-color, 50%, $white 50%);
+                }
+
+                &.newsletter-widget {
+                    input {
+                        background-color: #141819;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            background-color: #141819;
+
+            .copyright {
+                color: $white;
+            }
+        }
+    }
+}

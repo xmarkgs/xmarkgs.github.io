@@ -1,0 +1,75 @@
+/*======= Counter =======*/
+.counter-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    &.counter-boxed-style {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -110px;
+
+        .counter-boxed-innter {
+            background-color: $text-color;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                position: absolute;
+                right: 20px;
+                bottom: -20px;
+                left: 20px;
+                height: 20px;
+                content: "";
+                z-index: -1;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .counter-boxes {
+        .counter-box {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $raj;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 40px;
+
+            @include respond-below(sm) {
+                font-size: 15px;
+            }
+
+            .icon {
+                font-size: 55px;
+                margin-bottom: 25px;
+                line-height: 1;
+                color: $primary-color;
+            }
+
+            .count {
+                display: block;
+                font-size: 55px;
+                margin-bottom: 5px;
+
+                @include respond-below(sm) {
+                    font-size: 42px;
+                }
+
+                &::after {
+                    content: "+";
+                    color: $primary-color;
+                    font-size: 16px;
+                    margin-left: 2px;
+                }
+            }
+
+            &.white-style {
+                color: $white;
+            }
+        }
+    }
+}

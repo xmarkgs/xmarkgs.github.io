@@ -1,0 +1,118 @@
+/*=======  History  =======*/
+.history-section {
+    padding-top: 240px;
+    padding-bottom: 120px;
+}
+
+.timeline-btn-with-progess {
+    position: relative;
+    z-index: 1;
+
+    .progress {
+        height: 4px;
+        border-radius: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        transform: translateY(-50%);
+
+        @include respond-below(xs) {
+            display: none;
+        }
+
+        .progress-bar {
+            background-color: $primary-color;
+            width: 20%;
+        }
+    }
+}
+
+.timeline-tab-btns {
+    padding: 0px 100px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @include respond-below(c1350) {
+        padding: 0px 50px;
+    }
+
+    @include respond-below(md) {
+        padding: 0px 30px;
+    }
+
+    @include respond-below(xs) {
+        padding: 0;
+        justify-content: center;
+    }
+
+    li {
+
+        a {
+            background-color: $white;
+            font-family: $raj;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 18px 35px;
+            font-size: 16px;
+            display: inline-block;
+            line-height: 1;
+            color: $text-color;
+
+            @include respond-below(md) {
+                padding: 15px 28px;
+            }
+
+            @include respond-below(sm) {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+
+            @include respond-below(xs) {
+                margin: 5px;
+            }
+
+            &.active,
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.timeline-text {
+    @include respond-below(md) {
+        margin-top: 50px;
+    }
+
+    .timeline-tag {
+        font-size: 16px;
+        font-family: $raj;
+        font-weight: 700;
+        color: $primary-color;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .timeline-title {
+        font-size: 48px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 30px;
+
+        @include respond-below(md) {
+            font-size: 42px;
+        }
+
+        @include respond-below(xs) {
+            font-size: 32px;
+        }
+    }
+
+    a.main-btn {
+        margin-top: 40px;
+    }
+}

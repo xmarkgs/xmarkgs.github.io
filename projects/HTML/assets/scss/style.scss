@@ -1,0 +1,61 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Yankee - Digital Agency HTML Template
+    Template URI: https://webtend.net/demo/html/yankee/
+    Author: WebTend
+    Author URI:  https://webtend.net/
+    Version: 1.0
+
+    Note: This is Main Style Scss File. 
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    01. Common 
+    02. Header
+    03. Banner
+    04. About
+    05. Services
+    06. Feature
+    07. Call to Action
+    08. Gallery
+    09. Portfolio
+    10. Skills
+    11. Team 
+    12. Latest News 
+    13. Pricing
+    14. Sponsors
+    15. Counter
+    16. Contact
+    17. Breadcrumb
+    18. History
+    19. Testimonials
+    20. Version changing
+    21. Advanced Tab
+    22. Blog
+    23. Footer
+    
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'services';
+@import 'feature';
+@import 'cta';
+@import 'gallery';
+@import 'portfolio';
+@import 'skills';
+@import 'team';
+@import 'latest-blog';
+@import 'pricing';
+@import 'sponsors';
+@import 'counter';
+@import 'contact';
+@import 'breadcrumb';
+@import 'history';
+@import 'testimonials';
+@import 'version';
+@import 'advanced-tab';
+@import 'blog';
+@import 'footer';

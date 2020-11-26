@@ -1,0 +1,67 @@
+/*=======  Gallery  =======*/
+.gallery-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -225px;
+
+    @include respond-below(lg) {
+        margin-top: -110px;
+    }
+
+    .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        @include respond-below(lg) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .gallery-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -10px;
+        margin-left: -10px;
+
+        @include respond-below(lg) {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        @include respond-below(sm) {
+            flex-wrap: wrap;
+        }
+
+        .images {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @include respond-below(lg) {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+            @include respond-below(sm) {
+                order: 2;
+                max-width: 50%;
+                flex: 0 0 50%;
+                padding-top: 20px;
+            }
+
+            @include respond-below(sm) {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+
+            &:nth-child(2) {
+                @include respond-below(sm) {
+                    order: 1;
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}

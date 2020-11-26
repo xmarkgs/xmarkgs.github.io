@@ -1,0 +1,500 @@
+/*=======  COMMON CSS  =======*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+	font-family: $ops;
+	font-weight: 400;
+	font-style: normal;
+	color: $text-color;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+img {
+	max-width: 100%;
+	@include transition(0.3s);
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+.slick-initialized .slick-slide:focus,
+.btn:focus,
+select:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+input,
+textarea,
+button,
+select {
+	border: none;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	background-color: #f3f3f3;
+	padding: 0 30px;
+	height: 60px;
+	font-weight: 600;
+	font-size: 16px;
+	color: $text-color;
+}
+
+textarea {
+	height: 200px;
+	padding-top: 20px;
+	resize: none;
+}
+
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	color: #a5a5a5;
+	background: #f3f3f3 url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='14' height='14' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='a5a5a5'/></g></svg>") no-repeat;
+	background-position: right 30px top 50%;
+
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+select option {
+	color: #333;
+}
+
+::placeholder {
+	opacity: 1;
+	color: #a5a5a5;
+}
+
+::-webkit-scrollbar {
+	background-color: #ccc;
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $text-color;
+}
+
+.input-group {
+	position: relative;
+
+	input,
+	textarea,
+	select {
+		padding-right: 45px;
+		padding-left: 25px;
+	}
+
+	.icon {
+		position: absolute;
+		right: 25px;
+		font-size: 14px;
+		color: $primary-color;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&.textarea {
+		.icon {
+			top: 20px;
+			transform: translateY(0);
+		}
+	}
+}
+
+.slick-slide img {
+	display: inline-block;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+i,
+span,
+a {
+	display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $raj;
+	font-weight: 700;
+	margin: 0px;
+
+	&,
+	a {
+		color: $text-color;
+	}
+}
+
+
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+p {
+	margin: 0px;
+}
+
+a {
+	@include transition(0.3s);
+
+	&,
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+/*=======  Common Classes  =======*/
+.container-1500 {
+	@include respond-above(c1600) {
+		max-width: 1530px;
+	}
+
+	@include respond-between(c1350, c1600) {
+		max-width: 1330px;
+	}
+}
+
+.container-1320 {
+	@include respond-above(c1350) {
+		max-width: 1350px;
+	}
+}
+
+.main-btn {
+	font-family: $raj;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0 45px;
+	background-color: $primary-color;
+	color: $text-color;
+	line-height: 60px;
+	height: 60px;
+	@include transition(0.3s);
+
+	@include respond-below(xs) {
+		padding: 0 40px;
+		line-height: 55px;
+		height: 55px;
+		font-size: 15px;
+	}
+
+	.icon {
+		margin-left: 10px;
+	}
+
+	.icon-left {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		color: $white;
+		background-color: $text-color;
+	}
+
+	&.main-btn-2 {
+		border: 2px solid $soft-gery;
+		background-color: transparent;
+
+		&:hover {
+			color: $white;
+			background-color: $text-color;
+			border-color: $text-color;
+		}
+	}
+
+	&.main-btn-3 {
+		background-color: $white;
+
+		&:hover {
+			background-color: $text-color;
+			color: $white;
+		}
+	}
+
+	&.main-btn-4 {
+		color: $white;
+		background-color: $text-color;
+
+		&:hover {
+			background-color: $primary-color;
+			color: $text-color;
+		}
+	}
+}
+
+.section-title {
+	.title-tag {
+		font-family: $raj;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 2px;
+		color: $primary-color;
+		margin-bottom: 15px;
+	}
+
+	.title {
+		font-size: 60px;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		line-height: 1;
+
+		@include respond-below(lg) {
+			font-size: 42px;
+		}
+
+		@include respond-below(xs) {
+			font-size: 32px;
+		}
+
+		span {
+			display: block;
+			color: transparent;
+			-webkit-text-stroke: 1px $text-color;
+			opacity: 0.2;
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 700;
+		font-family: $raj;
+		line-height: 1.4;
+		margin-top: 25px;
+
+		@include respond-below(lg) {
+			font-size: 18px;
+		}
+
+		@include respond-below(xs) {
+			font-size: 17px;
+		}
+	}
+
+	&.white-color {
+
+		.title,
+		p {
+			color: $white;
+		}
+
+		.title span {
+			-webkit-text-stroke: 1px $white;
+			opacity: 0.4;
+		}
+	}
+}
+
+.section-gap {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	@include respond-below(sm) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}
+
+.section-gap-bottom {
+	padding-bottom: 120px;
+
+	@include respond-below(sm) {
+		padding-bottom: 90px;
+	}
+}
+
+.section-gap-top {
+	padding-top: 120px;
+
+	@include respond-below(sm) {
+		padding-top: 90px;
+	}
+}
+
+.section-gap-less-top {
+	padding-top: 80px;
+	padding-bottom: 120px;
+}
+
+.section-gap-less-bottom {
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+
+.grey-bg {
+	background-color: #f4f9fa;
+}
+
+.smoke-bg {
+	background-color: #f6f6f6;
+}
+
+.dark-bg {
+	background-color: $text-color;
+}
+
+.border-top {
+	border-top: 2px solid #efefef !important;
+}
+
+.body-clippy-shape {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	background-color: $primary-color;
+	clip-path: polygon(65% 0, 0 0, 0 100%);
+	height: 2085px;
+
+	@include respond-below(c1350) {
+		clip-path: polygon(70% 0, 0 0, 0 100%);
+		height: 1600px;
+	}
+
+	@include respond-below(sm) {
+		clip-path: polygon(60% 0, 0 0, 0 100%);
+		height: 1500px;
+	}
+}
+
+/*======= Preloader =======*/
+div#preloader {
+	margin: auto;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: $text-color;
+	z-index: 9999999;
+
+	.line {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -30px;
+		width: 60px;
+		height: 4px;
+		background: $white;
+		animation: spin 1.5s infinite ease;
+
+		&:nth-of-type(2) {
+			animation-delay: 0.1s;
+		}
+
+		&:nth-of-type(3) {
+			animation-delay: 0.2s;
+		}
+
+		&:nth-of-type(4) {
+			animation-delay: 0.3s;
+		}
+	}
+}
+
+/*=======  Utilitis =======*/
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-80 {
+	margin-top: 60px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-25 {
+	margin-bottom: 25px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+/*=======  Animations  =======*/
+@keyframes sticky {
+	0% {
+		top: -200px;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

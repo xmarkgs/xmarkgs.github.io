@@ -1,0 +1,90 @@
+/*=======  Advanced Tab  =======*/
+.advanced-tab-btns {
+    margin-top: 60px;
+    justify-content: center;
+
+    li {
+        margin: 10px 10px 0;
+
+        a {
+            position: relative;
+            padding: 25px 70px;
+            border: 2px solid #f3f3f3;
+            font-size: 14px;
+            color: $text-color;
+            line-height: 1;
+            @include transition(0.3s);
+
+            @include respond-below(lg) {
+                padding: 25px 30px 25px 70px;
+                font-size: 12px;
+            }
+
+            .title {
+                text-transform: uppercase;
+                font-size: 24px;
+                letter-spacing: -1px;
+                font-weight: 700;
+                font-family: $raj;
+                display: block;
+                margin-bottom: 10px;
+                @include transition(0.3s);
+
+                @include respond-below(lg) {
+                    font-size: 20px;
+                }
+            }
+
+            .icon {
+                position: absolute;
+                left: 20px;
+                top: 25px;
+                color: $primary-color;
+                font-size: 30px;
+                @include transition(0.3s);
+            }
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                top: -15px;
+                transform: translateX(-50%);
+                background-color: $text-color;
+                content: "";
+                width: 30px;
+                height: 15px;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                visibility: hidden;
+                opacity: 0;
+
+                @include respond-below(md) {
+                    display: none;
+                }
+            }
+
+            &:hover,
+            &.active {
+                background-color: $text-color;
+                border-color: $text-color;
+
+                &,
+                .title {
+                    color: $white;
+                }
+            }
+
+            &.active {
+                &:after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.advanced-tab-text {
+    @include respond-below(md) {
+        margin-top: 50px;
+    }
+}

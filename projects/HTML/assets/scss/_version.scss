@@ -1,0 +1,82 @@
+/*=======  Version changing  =======*/
+.changing-version {
+    .changing-header {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 25px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        @include respond-below(lg) {
+            gap: 15px;
+        }
+
+        .icon {
+            color: $primary-color;
+            line-height: 1;
+            font-size: 55px;
+        }
+
+        .version-num {
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-family: $raj;
+            color: $primary-color;
+        }
+
+        .title {
+            font-size: 30px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: $white;
+
+            @include respond-below(lg) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    li {
+        color: #b5bbbd;
+
+        &:not(:last-child) {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #353b3c;
+        }
+    }
+}
+
+.version-video {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 385px;
+    position: relative;
+
+    @include respond-below(md) {
+        margin-bottom: 80px;
+    }
+
+    .popup-video {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: $white;
+        color: $text-color;
+        font-size: 16px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include respond-below(md) {
+            top: auto;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+    }
+}
