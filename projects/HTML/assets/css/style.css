@@ -31,7 +31,8 @@
     20. Version changing
     21. Advanced Tab
     22. Blog
-    23. Footer
+    23. Privacy policy plus Terms and Conditions
+    24. Footer
     
 -----------------------------------------------------------------------------------*/
 /*=======  COMMON CSS  =======*/
@@ -160,7 +161,7 @@ select option {
   position: absolute;
   right: 25px;
   font-size: 14px;
-  color: #ffaa17;
+  color: #2F66F1;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -233,7 +234,7 @@ a {
 }
 
 a, a:hover {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 /*=======  Common Classes  =======*/
@@ -261,7 +262,7 @@ a, a:hover {
   text-transform: uppercase;
   font-weight: 700;
   padding: 0 45px;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
   line-height: 60px;
   height: 60px;
@@ -318,7 +319,7 @@ a, a:hover {
 }
 
 .main-btn.main-btn-4:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
 }
 
@@ -329,7 +330,7 @@ a, a:hover {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 15px;
 }
 
@@ -451,7 +452,7 @@ a, a:hover {
   position: absolute;
   z-index: -1;
   width: 100%;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   -webkit-clip-path: polygon(65% 0, 0 0, 0 100%);
           clip-path: polygon(65% 0, 0 0, 0 100%);
   height: 2085px;
@@ -912,7 +913,7 @@ header .nav-container .serach-wrap .search-form form button {
   top: 0;
   width: 60px;
   height: 100%;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   font-size: 14px;
   border: none;
 }
@@ -963,10 +964,19 @@ header .contact-btn .login-btn{
   color: #272A32;
 }
 
+header .contact-btn .login-btn:hover{
+  color: #2F66F1;
+  border: 1px solid #2F66F1;
+}
+
 header .contact-btn .signup-btn{
   background: #2F66F1;
   color: #FFFFFF;
   margin-left: 20px;
+}
+
+header .contact-btn .signup-btn:hover{
+  background: #40a9ff;
 }
 
 @media (max-width: 1349px) {
@@ -1481,7 +1491,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-size: 16px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
-  color: #ffaa17;
+  color: #2F66F1;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1;
@@ -1656,7 +1666,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   top: -130px;
   bottom: -130px;
   content: "";
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   width: 78%;
   z-index: -1;
   opacity: 0.9;
@@ -1791,7 +1801,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .banner-section .slick-arrow:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
 }
 
@@ -1836,7 +1846,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .about-text ul li span {
   margin-right: 12px;
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .about-text .founder-info {
@@ -1872,7 +1882,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .about-text .founder-info span {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
-  color: #ffaa17;
+  color: #2F66F1;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -1906,7 +1916,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   top: 50%;
   height: 180px;
   width: 180px;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1968,7 +1978,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   height: auto;
   width: auto;
   border: none;
-  border-left: 4px solid #ffaa17;
+  border-left: 4px solid #2F66F1;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(7, 28, 31, 0.04);
           box-shadow: 0px 8px 16px 0px rgba(7, 28, 31, 0.04);
   background-color: #fff;
@@ -2022,7 +2032,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .about-tag-img .experience-tag.style-two .big {
-  color: #ffaa17;
+  color: #2F66F1;
   margin-right: 20px;
   line-height: 1;
 }
@@ -2116,7 +2126,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .about-gallery::before, .about-gallery::after {
   position: absolute;
   content: "";
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 .about-gallery::before {
@@ -2216,7 +2226,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .service-boxes .service-box .icon-title-wrap .icon {
   font-size: 60px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 35px;
   line-height: 1;
 }
@@ -2290,7 +2300,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .service-section.with-counter-box .counter-boxes .counter-box .count::after {
   content: "+";
-  color: #ffaa17;
+  color: #2F66F1;
   font-size: 16px;
   margin-left: 2px;
 }
@@ -2391,7 +2401,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .frameworks-list li i {
-  color: #ffaa17;
+  color: #2F66F1;
   margin-right: 15px;
 }
 
@@ -2418,7 +2428,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   content: "";
   bottom: 0;
   right: 0;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   z-index: -1;
 }
 
@@ -2481,7 +2491,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .feature-lists li .icon.color-2 {
   color: #1d2122;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 @media (max-width: 1199px) {
@@ -2598,13 +2608,13 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   transition: all 0.3s ease-out 0s;
   opacity: 0;
   visibility: hidden;
-  border-bottom: 3px solid #ffaa17;
+  border-bottom: 3px solid #2F66F1;
 }
 
 .feature-boxes .feature-box .icon {
   line-height: 1;
   font-size: 60px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 20px;
 }
 
@@ -2691,7 +2701,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .feature-boxes-two .feature-box .icon {
   line-height: 1;
   font-size: 40px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 20px;
 }
 
@@ -2777,7 +2787,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .feature-tag-img .experience-tag .big::after {
   content: "+";
   font-size: 14px;
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .process-section {
@@ -3040,7 +3050,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .portfolio-items .portfolio-item .portfolio-desc .cat {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 6px;
@@ -3131,7 +3141,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   height: 60px;
   width: 60px;
   line-height: 60px;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
   top: -30px;
   right: 30px;
@@ -3283,12 +3293,12 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .portfolio-nav ul li.active, .portfolio-nav ul li:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 .portfolio-nav ul li:not(:first-child)::before {
   content: "--";
-  color: #ffaa17;
+  color: #2F66F1;
   position: absolute;
   left: -25px;
   top: 50%;
@@ -3368,7 +3378,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .portfolio-details-content p.dropcap:first-letter {
   float: left;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 66px;
@@ -3479,7 +3489,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .portfolio-details-content blockquote cite span {
   display: block;
   font-size: 16px;
-  color: #ffaa17;
+  color: #2F66F1;
   letter-spacing: 2px;
   margin-top: 10px;
 }
@@ -3569,7 +3579,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .portfolio-post-nav .next-post span {
   display: block;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 5px;
 }
 
@@ -3654,7 +3664,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .portfolio-sidebar .services-list a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
 }
 
@@ -3676,7 +3686,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .portfolio-sidebar .appointment-form span {
-  color: #ffaa17;
+  color: #2F66F1;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
@@ -3794,7 +3804,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .skill-progress-bars .skill-progress .progress-counter {
-  color: #ffaa17;
+  color: #2F66F1;
   position: absolute;
   top: 105%;
   -webkit-transform: translate(-40%, -50%);
@@ -3821,7 +3831,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
           transform: translateY(-50%);
   width: 0;
   height: 8px;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   -webkit-transition: width 2s ease-in-out;
   -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
@@ -3836,7 +3846,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
           transform: translateY(-50%);
   width: 3px;
   height: 18px;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   -webkit-transition: 2s ease-in-out;
   -o-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
@@ -3943,7 +3953,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-family: "Rajdhani", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 5px;
 }
 
@@ -3997,7 +4007,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   -webkit-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   content: "";
 }
 
@@ -4061,7 +4071,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
   z-index: 2;
-  color: #ffaa17;
+  color: #2F66F1;
   background-color: #1d2122;
   text-transform: uppercase;
 }
@@ -4104,7 +4114,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .latest-blog-posts .latest-blog-post .blog-desc .title a:hover {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .latest-blog-posts .latest-blog-post.light-bg .blog-thumb .blog-date {
@@ -4186,7 +4196,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .pricing-section .pricing-box .paln-title .paln-price {
-  color: #ffaa17;
+  color: #2F66F1;
   font-size: 120px;
   display: block;
   position: relative;
@@ -4220,7 +4230,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .pricing-section .pricing-box ul li i {
-  color: #ffaa17;
+  color: #2F66F1;
   margin-right: 20px;
 }
 
@@ -4237,7 +4247,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .pricing-section .pricing-box.active-plan .main-btn, .pricing-section .pricing-box:hover .main-btn {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
 }
 
@@ -4298,7 +4308,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   height: 20px;
   content: "";
   z-index: -1;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 .counter-section .counter-boxes .counter-box {
@@ -4320,7 +4330,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-size: 55px;
   margin-bottom: 25px;
   line-height: 1;
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .counter-section .counter-boxes .counter-box .count {
@@ -4337,7 +4347,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .counter-section .counter-boxes .counter-box .count::after {
   content: "+";
-  color: #ffaa17;
+  color: #2F66F1;
   font-size: 16px;
   margin-left: 2px;
 }
@@ -4383,10 +4393,10 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #aeb5b7));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #aeb5b7));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
   background-size: 200% 100%;
   background-position: 100%;
 }
@@ -4397,10 +4407,10 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   left: 0;
   width: 100%;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #aeb5b7));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #aeb5b7 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #aeb5b7));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #aeb5b7 50%);
   background-size: 200% 100%;
   background-position: 100%;
   content: "";
@@ -4452,7 +4462,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffaa17;
+  color: #2F66F1;
   letter-spacing: -1px;
 }
 
@@ -4599,7 +4609,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .timeline-btn-with-progess .progress .progress-bar {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   width: 20%;
 }
 
@@ -4664,7 +4674,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .timeline-tab-btns li a.active, .timeline-tab-btns li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 @media (max-width: 991px) {
@@ -4677,7 +4687,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-size: 16px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
-  color: #ffaa17;
+  color: #2F66F1;
   letter-spacing: 2px;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -4709,7 +4719,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 /*======= Testimonials =======*/
 .testimonials-section .testimonials-inner {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   padding: 100px 170px;
   position: relative;
   z-index: 1;
@@ -4837,7 +4847,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .testimonials-section.style-two .testimonials-inner .single-testimonial .atuthor-info span {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .testimonials-section.style-two .thumb-images img {
@@ -4948,7 +4958,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .changing-version .changing-header .icon {
-  color: #ffaa17;
+  color: #2F66F1;
   line-height: 1;
   font-size: 55px;
 }
@@ -4957,7 +4967,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   letter-spacing: 2px;
   font-weight: 700;
   font-family: "Rajdhani", sans-serif;
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .changing-version .changing-header .title {
@@ -5079,7 +5089,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   position: absolute;
   left: 20px;
   top: 25px;
-  color: #ffaa17;
+  color: #2F66F1;
   font-size: 30px;
   -webkit-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
@@ -5200,7 +5210,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   color: #1d2122;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   line-height: 1;
   padding: 8px 30px;
   margin-right: 5px;
@@ -5267,7 +5277,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .single-blog-post .entry-summary .entry-meta a:hover {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .single-blog-post .entry-summary .entry-meta a i {
@@ -5316,14 +5326,14 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .single-blog-post .entry-summary .entry-footer a:hover {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .single-blog-post.video-post .popup-video {
   width: 80px;
   height: 80px;
   text-align: center;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   font-size: 14px;
   color: #1d2122;
   line-height: 80px;
@@ -5350,7 +5360,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 .single-blog-post.quote-post .entry-summary {
   border: none;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   position: relative;
   z-index: 1;
   padding: 50px 50px 50px 150px;
@@ -5454,7 +5464,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   color: #1d2122;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   line-height: 1;
   padding: 8px 30px;
   margin-right: 5px;
@@ -5639,7 +5649,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-weight: 700;
   margin-bottom: 20px;
   font-style: normal;
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .blog-post-details .post-footer {
@@ -5680,7 +5690,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-post-details .post-footer .related-tags li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #1d2122;
 }
 
@@ -5740,7 +5750,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .blog-post-details .post-nav .next-post span {
   display: block;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 5px;
   font-size: 14px;
 }
@@ -5808,7 +5818,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-post-details .related-post .single-related-post .desc .date {
-  color: #ffaa17;
+  color: #2F66F1;
   margin-bottom: 10px;
 }
 
@@ -5864,7 +5874,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .blog-post-details .author-info span {
   font-size: 12px;
   margin-bottom: 10px;
-  color: #ffaa17;
+  color: #2F66F1;
   font-weight: 700;
 }
 
@@ -5939,7 +5949,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 .blog-sibebar .widget .widget-title::before {
@@ -5990,7 +6000,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-sibebar .widget.about-author-widget .author-info .social-icon li a:hover {
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .blog-sibebar .widget.search-widget form {
@@ -6010,7 +6020,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   top: 0;
   width: 60px;
   height: 100%;
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   font-size: 14px;
   border: none;
   -webkit-transition: 0.3s;
@@ -6115,7 +6125,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-sibebar .widget.categories-widget li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
   color: #fff;
 }
 
@@ -6155,7 +6165,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-sibebar .widget.social-widget ul li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 .blog-sibebar .widget.twitter-widget li {
@@ -6175,7 +6185,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   top: 2px;
   content: "\f099";
   font-family: "Font Awesome 5 Brands";
-  color: #ffaa17;
+  color: #2F66F1;
 }
 
 .blog-sibebar .widget.twitter-widget li a {
@@ -6274,7 +6284,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .blog-sibebar .widget.tag-widget ul li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F66F1;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6332,8 +6342,8 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .post-pagination ul li span.active-page, .post-pagination ul li span:hover,
 .post-pagination ul li a.active-page,
 .post-pagination ul li a:hover {
-  background-color: #ffaa17;
-  border-color: #ffaa17;
+  background-color: #2F66F1;
+  border-color: #2F66F1;
 }
 
 /*======= Comment Template =======*/
@@ -6389,7 +6399,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .comment-template .comment-lists li .comment-desc .date {
-  color: #ffaa17;
+  color: #2F66F1;
   font-weight: 700;
   font-size: 12px;
   margin-bottom: 20px;
@@ -6529,6 +6539,15 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   }
 }
 
+/*======= Privacy policy plus Terms and Conditions =======*/
+.privacy-text{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+
 /*======= Footer =======*/
 footer {
   position: relative;
@@ -6583,10 +6602,10 @@ footer .footer-widgets .widget.text-block-widget .read-more-btn {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #1d2122));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #1d2122 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #1d2122));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #1d2122 50%);
   background-size: 200% 100%;
   background-position: 100%;
 }
@@ -6597,10 +6616,10 @@ footer .footer-widgets .widget.text-block-widget .read-more-btn::before {
   left: 0;
   width: 100%;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #1d2122));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #1d2122 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #1d2122));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #1d2122 50%);
   background-size: 200% 100%;
   background-position: 100%;
   content: "";
@@ -6625,10 +6644,10 @@ footer .footer-widgets .widget.menu-widget li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #1d2122));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #1d2122 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #1d2122 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #1d2122));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #1d2122 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #1d2122 50%);
   background-size: 200% 100%;
   background-position: 100%;
 }
@@ -6678,7 +6697,7 @@ footer .footer-widgets .widget.latest-post-widget li .post-thumb {
 footer .footer-widgets .widget.latest-post-widget li span {
   font-size: 14px;
   letter-spacing: 2px;
-  color: #ffaa17;
+  color: #2F66F1;
   text-transform: uppercase;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
@@ -6739,10 +6758,10 @@ footer.footer-two .footer-widgets .widget.text-block-widget .read-more-btn,
 footer.footer-two .footer-widgets .widget.text-block-widget .read-more-btn::before,
 footer.footer-two .footer-widgets .widget.menu-widget li a {
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffaa17), color-stop(#ffaa17), color-stop(50%), color-stop(50%, #fff));
-  background-image: -webkit-linear-gradient(left, #ffaa17, #ffaa17, 50%, #fff 50%);
-  background-image: -o-linear-gradient(left, #ffaa17, #ffaa17, 50%, #fff 50%);
-  background-image: linear-gradient(to right, #ffaa17, #ffaa17, 50%, #fff 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2F66F1), color-stop(#2F66F1), color-stop(50%), color-stop(50%, #fff));
+  background-image: -webkit-linear-gradient(left, #2F66F1, #2F66F1, 50%, #fff 50%);
+  background-image: -o-linear-gradient(left, #2F66F1, #2F66F1, 50%, #fff 50%);
+  background-image: linear-gradient(to right, #2F66F1, #2F66F1, 50%, #fff 50%);
 }
 
 footer.footer-two .footer-widgets .widget.newsletter-widget input {
