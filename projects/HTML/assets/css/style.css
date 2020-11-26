@@ -35,6 +35,7 @@
     
 -----------------------------------------------------------------------------------*/
 /*=======  COMMON CSS  =======*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
@@ -660,7 +661,7 @@ header .nav-container {
 @media (max-width: 1199px) {
   header .nav-container {
     width: calc(100% - 240px);
-    padding: 0px 30px;
+    padding: 0px 24px;
   }
 }
 
@@ -743,8 +744,8 @@ header .nav-container .menu-items li a {
   margin: 0 10px;
   line-height: 100px;
   position: relative;
-  font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-family: 'Archivo', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
@@ -780,7 +781,7 @@ header .nav-container .menu-items li .dd-trigger {
   position: absolute;
   right: 5px;
   display: block;
-  color: #ffaa17;
+  color: #2F80ED;
   top: 48%;
   font-size: 16px;
   z-index: 5;
@@ -841,7 +842,7 @@ header .nav-container .menu-items li .submenu li a {
 }
 
 header .nav-container .menu-items li .submenu li a:hover {
-  background-color: #ffaa17;
+  background-color: #2F80ED;
   color: #fff !important;
 }
 
@@ -861,7 +862,7 @@ header .nav-container .menu-items li:hover > .submenu {
 }
 
 header .nav-container .menu-items li.current a {
-  color: #ffaa17;
+  color: #2F80ED;
 }
 
 @media (max-width: 575px) {
@@ -928,9 +929,25 @@ header .contact-btn {
   bottom: 0;
   height: 100px;
   width: 300px;
-  background-color: #ffaa17;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-star;
+          justify-content: flex-star;
+}
+
+header .contact-btn .auth-btn{
+  width: 107px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -938,6 +955,18 @@ header .contact-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .contact-btn .login-btn{
+  background: #FFFFFF;
+  border: 1px solid #272A32;
+  color: #272A32;
+}
+
+header .contact-btn .signup-btn{
+  background: #2F66F1;
+  color: #FFFFFF;
+  margin-left: 20px;
 }
 
 @media (max-width: 1349px) {
@@ -1082,7 +1111,7 @@ header .mobile-menu .menu-items ul li .dd-trigger.open i {
 }
 
 header .mobile-menu .menu-items ul li.current {
-  border-left: 2px solid #ffaa17;
+  border-left: 2px solid #2F80ED;
 }
 
 header .mobile-menu .navbar-close {
@@ -1229,8 +1258,7 @@ header.sticky-header.sticky-on {
           animation: sticky 1.2s;
 }
 
-header.sticky-header.sticky-on .nav-container,
-header.sticky-header.sticky-on .contact-btn {
+header.sticky-header.sticky-on .nav-container{
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
