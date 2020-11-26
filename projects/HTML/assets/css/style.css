@@ -2168,8 +2168,8 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 .service-boxes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   border-top: 2px solid #f1f1f1;
   border-left: 2px solid #f1f1f1;
 }
@@ -2189,20 +2189,39 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 .service-boxes .service-box {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between;
   background-color: #fff;
   padding: 45px 40px;
   border-right: 2px solid #f1f1f1;
   border-bottom: 2px solid #f1f1f1;
 }
 
-.service-boxes .service-box .icon {
+.service-boxes .service-box .icon-title-wrap{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between;
+}
+
+.service-boxes .service-box .icon-title-wrap .icon {
   font-size: 60px;
   color: #ffaa17;
   margin-bottom: 35px;
   line-height: 1;
 }
 
-.service-boxes .service-box .title {
+.service-boxes .service-box .icon-title-wrap .title {
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1;
@@ -2210,7 +2229,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 }
 
 @media (max-width: 767px) {
-  .service-boxes .service-box .title {
+  .service-boxes .service-box .icon-title-wrap .title {
     margin-bottom: 40px;
   }
 }
