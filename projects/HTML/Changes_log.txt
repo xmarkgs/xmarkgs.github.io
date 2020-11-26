@@ -376,3 +376,28 @@ Deleted Sections Home page:
 		</div>
 	</section>
 
+Sponsors section from service-details.html:
+
+<section class="sponsors-section mt-40">
+        <div class="container-fluid">
+            <div class="sponsors-slider">
+                <div class="sponsors-img">
+                    <img src="assets/img/sponsors/01.png" alt="Image">
+                </div>
+                <div class="sponsors-img">
+                    <img src="assets/img/sponsors/02.png" alt="Image">
+                </div>
+                <div class="sponsors-img">
+                    <img src="assets/img/sponsors/03.png" alt="Image">
+                </div>
+                <div class="sponsors-img">
+                    <img src="assets/img/sponsors/04.png" alt="Image">
+                </div>
+
+                <div class="sponsors-img">
+                    <img src="assets/img/sponsors/05.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
