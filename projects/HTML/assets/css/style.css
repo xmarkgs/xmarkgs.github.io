@@ -946,7 +946,7 @@ header .contact-btn {
   position: relative;
 }
 
-header .contact-btn .auth-btn{
+.auth-btn{
   width: 107px;
   height: 44px;
   box-sizing: border-box;
@@ -974,14 +974,15 @@ header .contact-btn .login-btn:hover{
   border: 1px solid #2F66F1;
 }
 
-header .contact-btn .signup-btn{
+.signup-btn{
   background: #2F66F1;
   color: #FFFFFF;
   margin-left: 20px;
 }
 
-header .contact-btn .signup-btn:hover{
+.signup-btn:hover{
   background: #40a9ff;
+  color: #FFFFFF;
 }
 
 @media (max-width: 1349px) {
@@ -2189,6 +2190,11 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   border-left: 2px solid #f1f1f1;
 }
 
+.calc-body .service-boxes {
+  column-gap: 40px;
+  border: 0;
+}
+
 @media (max-width: 991px) {
   .service-boxes {
     -ms-grid-columns: (1fr)[2];
@@ -2216,6 +2222,10 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   padding: 45px 40px;
   border-right: 2px solid #f1f1f1;
   border-bottom: 2px solid #f1f1f1;
+}
+
+.calc-body .service-box{
+  border: 2px solid #f1f1f1;
 }
 
 .service-boxes .service-box .icon-title-wrap{
@@ -6608,11 +6618,15 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   margin-left: 10px;
 }
 
-.calc-body{
-  margin-top: 80px;
+#calc-helper:hover ~ #infoModal {
+  opacity: 1;
 }
 
-.plan-price{
+.calc-body{
+  margin-top: 4.5rem;
+}
+
+.plan-price {
   outline: 0;
   border: 0;
   background: transparent;
@@ -6620,9 +6634,87 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-style: normal;
   font-weight: bold;
   font-size: 51px;
+  color: #08142F;
+  text-align: center;
 }
 
-#errModal {
+.plan-sale {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2D9CDB;
+  margin-top: 7px;
+}
+
+.plan-fee {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.plan-start {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+}
+
+.plan-start a{
+  margin: 0;
+}
+
+.plan-start p {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #828282;
+  margin-top: 8px;
+}
+
+
+.plan-period {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(241, 241, 241);
+}
+
+.plan-info {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0 21px 0;
+}
+
+.calc-modal {
   max-width: 150px;
   position: absolute;
   bottom: 55px;
@@ -6638,8 +6730,6 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   font-size: 12px;
   font-family: 'Archivo', sans-serif;
   font-weight: 400;
-  background-color: #CE3E3E;
-  color: white;
   border-radius: 3px;
   line-height: 1rem;
   transition: 0.2s;
@@ -6651,6 +6741,33 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
        -moz-user-select: none; 
         -ms-user-select: none; 
             user-select: none;
+}
+
+#errModal {
+  background-color: #CE3E3E;
+  color: white;
+}
+
+#infoModal {
+  background-color: #08142F;
+  color: white;
+  max-width: 200px;
+}
+
+.calc-description {
+  margin-top: 80px;
+}
+
+.calc-description h2 {
+  line-height: 2rem;
+}
+
+.calc-description p{
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 4.5rem;
 }
 
 
