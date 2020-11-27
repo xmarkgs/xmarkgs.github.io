@@ -35,7 +35,7 @@ calcInput.addEventListener('input', function (e) {
         if (data > 0) {
             if (data <= 25) {
                 if (data > 3) {
-                    setValue(false, `$${Math.round(20+(data-3)*9.99)}`, `$${Math.round(216+(data-3)*9.99)}`);
+                    setValue(false, `$${data*10}`, `$${data*10*12*0.9}`);
                     errModal(true);
                 } else {
                     setValue(false, '$20', '$216');

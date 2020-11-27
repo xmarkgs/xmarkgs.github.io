@@ -6608,7 +6608,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   margin-left: 15px;
 }
 
-.calc-users input:focus{
+.calc-users #calcInput:focus{
   border-color: #5D9AF8;
 }
 
