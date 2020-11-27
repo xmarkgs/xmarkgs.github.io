@@ -652,10 +652,6 @@ header .nav-container {
   width: calc(100% - 330px);
 }
 
-#fullwidthheader-container{
-  width: 100%;
-}
-
 @media (max-width: 1349px) {
   header .nav-container {
     width: calc(100% - 270px);
