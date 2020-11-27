@@ -28,6 +28,7 @@
 	15. Sticky Header
 	16. Preloader
 	17. Wow Js 
+	18. Price Calculator
 
 -----------------------------*/
 
@@ -61,7 +62,7 @@
 			if ($(this).next().length > 0) {
 				$(this)
 					.parent('li')
-					.append( '<span class="dd-trigger"><i class="fal fa-angle-down"></i></span>' );
+					.append('<span class="dd-trigger"><i class="fal fa-angle-down"></i></span>');
 			}
 		});
 
@@ -86,7 +87,7 @@
 			$(this).toggleClass('search-on');
 			e.preventDefault();
 		});
-		
+
 		// Offcanvs Menu
 		var offcanvasBtn = $('.off-canvas-btn'),
 			offcanvasItems = $('.off-canvas-items'),
@@ -198,7 +199,9 @@
 					.find('.count')
 					.each(function () {
 						var $this = $(this);
-						$({ Counter: 0 }).animate({
+						$({
+							Counter: 0
+						}).animate({
 							Counter: $this.text()
 						}, {
 							duration: 3000,
@@ -227,8 +230,7 @@
 			fade: false,
 			dots: false,
 			swipe: true,
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 992,
 					settings: {
 						slidesToShow: 2,
@@ -265,7 +267,9 @@
 					counter.css('top', '50%');
 
 					// set counter
-					$({ Counter: 0 }).animate({
+					$({
+						Counter: 0
+					}).animate({
 						Counter: dataCount
 					}, {
 						duration: 2000,
@@ -325,8 +329,7 @@
 			swipe: true,
 			centerMode: true,
 			centerPadding: '30%',
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 1350,
 					settings: {
 						centerPadding: '25%',
@@ -368,8 +371,7 @@
 			fade: false,
 			dots: false,
 			swipe: true,
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 992,
 					settings: {
 						slidesToShow: 3,
@@ -399,8 +401,7 @@
 			fade: false,
 			dots: false,
 			swipe: true,
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 1200,
 					settings: {
 						slidesToShow: 4,
@@ -468,8 +469,8 @@
 	function gtToTop() {
 		$('.back-to-top').on('click', function (e) {
 			$('html, body').animate({
-				scrollTop: '0',
-			},
+					scrollTop: '0',
+				},
 				1200
 			);
 
