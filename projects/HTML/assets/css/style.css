@@ -652,6 +652,10 @@ header .nav-container {
   width: calc(100% - 330px);
 }
 
+#fullwidthheader-container{
+  width: 100%;
+}
+
 @media (max-width: 1349px) {
   header .nav-container {
     width: calc(100% - 270px);
@@ -726,6 +730,7 @@ header .nav-container .navbar-toggler.active span:nth-of-type(3) {
 
 header .nav-container .menu-items {
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -929,7 +934,6 @@ header .contact-btn {
   right: 0;
   bottom: 0;
   height: 100px;
-  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,6 +943,10 @@ header .contact-btn {
   -webkit-box-pack: flex-start;
       -ms-flex-pack: flex-star;
           justify-content: flex-star;
+}
+
+#fullwidthheader{
+  position: relative;
 }
 
 header .contact-btn .auth-btn{
