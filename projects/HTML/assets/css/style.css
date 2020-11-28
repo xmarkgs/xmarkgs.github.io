@@ -4466,6 +4466,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   width: 100%;
   height: 700px;
   background-color: #ddd;
+  margin-top: 40px;
 }
 
 @media (max-width: 1199px) {
@@ -4762,7 +4763,7 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 /*======= Testimonials =======*/
 .testimonials-section .testimonials-inner {
-  background-color: #2F66F1;
+  background-color: transparent;
   padding: 100px 170px;
   position: relative;
   z-index: 1;
@@ -6810,9 +6811,17 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   flex-wrap: wrap;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .footer-bottom-menu {
     margin-top: 15px;
+  }
+
+  #privacypolicy-copyright {
+    flex-direction: column;
+  }
+
+  footer .footer-bottom .copyright {
+    margin-left: 0;
   }
 }
 
@@ -6827,6 +6836,10 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 footer .footer-bottom .container .row {
   width: 100%;
   margin: 0;
+}
+
+#privacypolicy-copyright {
+  display: flex;
 }
 
 footer {
@@ -7003,6 +7016,7 @@ footer .footer-bottom .copyright {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
