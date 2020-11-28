@@ -42,13 +42,13 @@
 
     <!--====== Header part start ======-->
     <header class="sticky-header">
-        <!-- Header Menu  -->
-        <div class="container-fluid container-1500">
-            <div class="header-nav">
-                <div class="nav-container">
+		<!-- Header Menu  -->
+		<div class="container-fluid container-1500">
+			<div class="header-nav">
+				<div class="nav-container" style="width: 100%;">
 					<!-- Site Logo -->
 					<div class="site-logo">
-						<a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+						<a href="index.html"><img src="assets/img/logo.svg" alt="Logo"></a>
 					</div>
 
 					<!-- Menu Items -->
@@ -65,8 +65,15 @@
 									<li><a href="shipper.html">Shipper</a></li>
 								</ul>
 							</li>
+							<li><a href="pricing.html">Pricing</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
+					</div>
+
+					<!-- Contact button -->
+					<div class="contact-btn" id="fullwidthheader">
+						<a href="https://waysnet.com/auth/login" class="auth-btn login-btn">Log In</a>
+						<a href="https://waysnet.com/auth/register/general" class="auth-btn signup-btn">Sign Up</a>
 					</div>
 
 					<!-- Navbar Extra  -->
@@ -78,70 +85,43 @@
 					</div>
 				</div>
 
-				<!-- Contact button -->
-				<div class="contact-btn">
-					<a href="https://waysnet.com/auth/login" class="auth-btn login-btn">Log In</a>
-					<a href="https://waysnet.com/auth/register/general" class="auth-btn signup-btn">Sign Up</a>
+				<!-- Mobile Menu  -->
+				<div class="mobile-menu">
+					<!-- Navbar Close -->
+					<div class="navbar-close">
+						<div class="cross-wrap"><span></span><span></span></div>
+					</div>
+
+					<div class="site-logo">
+						<a href="index.html"><img src="assets/img/logo-light.svg" alt="Logo" style="max-width: 60px;"></a>
+					</div>
+
+					<div class="menu-items">
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li class="current"><a href="about.html">About us</a></li>
+							<li>
+								<a style="cursor: pointer;">Services</a>
+								<ul class="submenu">
+									<li><a href="carrier.html">Carrier</a></li>
+									<li><a href="shipper.html">Shipper</a></li>
+								</ul>
+							</li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="contact-btn">
+						<a href="https://waysnet.com/auth/login" class="auth-btn login-btn">Log In</a>
+						<a href="https://waysnet.com/auth/register/general" class="auth-btn signup-btn">Sign Up</a>
+					</div>
 				</div>
-
-                <!-- Mobile Menu  -->
-                <div class="mobile-menu">
-                    <!-- Navbar Close -->
-                    <div class="navbar-close">
-                        <div class="cross-wrap"><span></span><span></span></div>
-                    </div>
-
-                    <div class="site-logo">
-                        <a href="index.html"><img src="assets/img/logo-3.png" alt="Logo"></a>
-                    </div>
-
-                    <div class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                                <ul class="submenu">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a> </li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                </ul>
-                            </li>
-                            <li class="current"><a href="about.html">About us</a></li>
-                            <li>
-                                <a href="services.html">Services</a>
-                                <ul class="submenu">
-                                    <li><a href="service-details.html">Service Details</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="services.html">Pages</a>
-                                <ul class="submenu">
-                                    <li><a href="portfolio.html">Portfolio One</a></li>
-                                    <li><a href="portfolio-2.html">Portfolio Two</a></li>
-                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="blog.html">News</a>
-                                <ul class="submenu">
-                                    <li><a href="blog-details.html">News Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-btn">
-                        <div class="contact-info">
-                            <i class="fal fa-phone"></i>
-                            <span class="title">Phone number</span>
-                            <span class="info">987-987-987-98</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+			</div>
+		</div>
+	</header>
     <!--====== Header part end ======-->
 
     <!--====== Breadcrumb Start ======-->
@@ -675,17 +655,23 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row align-items-center justify-content-between">
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="footer-logo text-center text-md-left">
-							<img src="assets/img/logo.png" alt="Yankee">
+							<img src="assets/img/logo.svg" alt="WaysNet">
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
+						<ul class="footer-bottom-menu">
+							<li><a href="privacypolicy.html">Privacy Policy</a></li>
+							<li><a href="termsconditions.html">Terms and Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-12">
 						<div class="copyright text-center text-md-right">
 							<p>Copyright ©2020. All Rights Reserved</p>
 						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</footer>

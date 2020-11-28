@@ -676,7 +676,6 @@ header .nav-container {
 }
 
 header .nav-container .navbar-toggler {
-  border: 1px solid #1d2122;
   background-color: transparent;
   cursor: pointer;
   display: none;
@@ -928,7 +927,7 @@ header .nav-container .serach-wrap .search-form.search-on {
 }
 
 header .contact-btn {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   height: 100px;
@@ -943,9 +942,15 @@ header .contact-btn {
           justify-content: flex-star;
 }
 
-#fullwidthheader{
-  position: relative;
+@media (max-width: 991px) {
+  header .contact-btn {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    margin: auto auto 20px auto !important;
+  }
 }
+
 
 .auth-btn{
   width: 107px;
@@ -1063,6 +1068,12 @@ header .mobile-menu.menu-on {
 
 header .mobile-menu .site-logo {
   padding: 40px 25px 30px;
+}
+
+@media (max-width: 575px) {
+  .site-logo a img{
+    max-width: 80%;
+  }
 }
 
 header .mobile-menu .menu-items {
@@ -4494,6 +4505,10 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
   letter-spacing: -1px;
 }
 
+.dark-hero-img::before {
+  opacity: 1 !important;
+}
+
 .breadcrumb-section .container {
   padding-top: 250px;
   padding-bottom: 150px;
@@ -6785,6 +6800,35 @@ header.sticky-header.sticky-on.header-three .nav-container .navbar-toggler {
 
 
 /*======= Footer =======*/
+
+.footer-bottom-menu {
+  display: flex;
+  justify-content: center;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .footer-bottom-menu {
+    margin-top: 15px;
+  }
+}
+
+.footer-bottom-menu li:last-child {
+  margin-left: 10px;
+}
+
+.footer-bottom-menu li a {
+  color: #1d2122;
+}
+
+footer .footer-bottom .container .row {
+  width: 100%;
+  margin: 0;
+}
+
 footer {
   position: relative;
   position: relative;
